@@ -9,6 +9,8 @@ import UIKit
 
 class IntroductionViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
+    
     // MARK: - Constructors
     required init(with feedsController: FeedsController) {
         super.init(nibName: R.nib.introductionViewController.name, bundle: R.nib.introductionViewController.bundle)
