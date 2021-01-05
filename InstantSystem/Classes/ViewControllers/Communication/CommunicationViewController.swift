@@ -1,5 +1,5 @@
 //
-//  FeedDetailViewController.swift
+//  CommunicationViewModel.swift
 //  InstantSystem
 //
 //  Created by Paul_Lavoine on 05/01/2021.
@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 import Rswift
 
-class FeedDetailViewController: UIViewController {
+class CommunicationViewController: UIViewController {
     
     // MARK: - Constructors
     required init(with feedsController: FeedsController) {
-        super.init(nibName: R.nib.feedDetailViewController.name, bundle: R.nib.feedDetailViewController.bundle)
+        super.init(nibName: R.nib.communicationViewController.name, bundle: R.nib.communicationViewController.bundle)
     }
     
     required init?(coder: NSCoder) {

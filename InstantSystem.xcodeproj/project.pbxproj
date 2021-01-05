@@ -33,10 +33,16 @@
 		A850EE7625A4FCFE0001A433 /* FeedPOSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE7525A4FCFE0001A433 /* FeedPOSO.swift */; };
 		A850EE7C25A4FD370001A433 /* PostPOSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE7B25A4FD370001A433 /* PostPOSO.swift */; };
 		A850EE8225A4FE330001A433 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE8125A4FE330001A433 /* FeedsViewController.swift */; };
-		A850EE8625A4FE3C0001A433 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */; };
-		A850EE9F25A5017E0001A433 /* FeedDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */; };
+		A850EE8625A4FE3C0001A433 /* CommunicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE8525A4FE3C0001A433 /* CommunicationViewController.swift */; };
+		A850EE9F25A5017E0001A433 /* CommunicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EE9E25A5017E0001A433 /* CommunicationViewController.xib */; };
 		A850EEA225A501880001A433 /* FeedsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EEA125A501880001A433 /* FeedsViewController.xib */; };
 		A879732825A50B7900ACD951 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879732725A50B7900ACD951 /* R.generated.swift */; };
+		A879734825A50D6F00ACD951 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879734725A50D6F00ACD951 /* IntroductionView.swift */; };
+		A879734B25A50DBB00ACD951 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879734A25A50DBB00ACD951 /* FeedsView.swift */; };
+		A879734F25A50DC400ACD951 /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879734E25A50DC400ACD951 /* FeedsViewModel.swift */; };
+		A879735225A50DCE00ACD951 /* IntroductionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879735125A50DCE00ACD951 /* IntroductionViewModel.swift */; };
+		A879735525A50E2E00ACD951 /* CommunicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879735425A50E2E00ACD951 /* CommunicationViewModel.swift */; };
+		A879735A25A50E6400ACD951 /* CommunicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879735925A50E6400ACD951 /* CommunicationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,10 +75,16 @@
 		A850EE7525A4FCFE0001A433 /* FeedPOSO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPOSO.swift; sourceTree = "<group>"; };
 		A850EE7B25A4FD370001A433 /* PostPOSO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPOSO.swift; sourceTree = "<group>"; };
 		A850EE8125A4FE330001A433 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
-		A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
-		A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailViewController.xib; sourceTree = "<group>"; };
+		A850EE8525A4FE3C0001A433 /* CommunicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationViewController.swift; sourceTree = "<group>"; };
+		A850EE9E25A5017E0001A433 /* CommunicationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunicationViewController.xib; sourceTree = "<group>"; };
 		A850EEA125A501880001A433 /* FeedsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsViewController.xib; sourceTree = "<group>"; };
 		A879732725A50B7900ACD951 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		A879734725A50D6F00ACD951 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		A879734A25A50DBB00ACD951 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
+		A879734E25A50DC400ACD951 /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
+		A879735125A50DCE00ACD951 /* IntroductionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewModel.swift; sourceTree = "<group>"; };
+		A879735425A50E2E00ACD951 /* CommunicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationViewModel.swift; sourceTree = "<group>"; };
+		A879735925A50E6400ACD951 /* CommunicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationView.swift; sourceTree = "<group>"; };
 		BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				A850EE7F25A4FE1C0001A433 /* Feeds */,
-				A850EE8025A4FE200001A433 /* FeedDetail */,
+				A850EE8025A4FE200001A433 /* Communication */,
 				A850EE6B25A4FB8B0001A433 /* Introduction */,
 			);
 			path = ViewControllers;
@@ -279,8 +291,10 @@
 		A850EE6B25A4FB8B0001A433 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
+				A879734725A50D6F00ACD951 /* IntroductionView.swift */,
 				A850EDEE25A4A2060001A433 /* IntroductionViewController.swift */,
 				A850EE6C25A4FBA10001A433 /* IntroductionViewController.xib */,
+				A879735125A50DCE00ACD951 /* IntroductionViewModel.swift */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -306,17 +320,21 @@
 			children = (
 				A850EE8125A4FE330001A433 /* FeedsViewController.swift */,
 				A850EEA125A501880001A433 /* FeedsViewController.xib */,
+				A879734A25A50DBB00ACD951 /* FeedsView.swift */,
+				A879734E25A50DC400ACD951 /* FeedsViewModel.swift */,
 			);
 			path = Feeds;
 			sourceTree = "<group>";
 		};
-		A850EE8025A4FE200001A433 /* FeedDetail */ = {
+		A850EE8025A4FE200001A433 /* Communication */ = {
 			isa = PBXGroup;
 			children = (
-				A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */,
-				A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */,
+				A850EE8525A4FE3C0001A433 /* CommunicationViewController.swift */,
+				A850EE9E25A5017E0001A433 /* CommunicationViewController.xib */,
+				A879735425A50E2E00ACD951 /* CommunicationViewModel.swift */,
+				A879735925A50E6400ACD951 /* CommunicationView.swift */,
 			);
-			path = FeedDetail;
+			path = Communication;
 			sourceTree = "<group>";
 		};
 		CCC8E4962176C5188D5FB94B /* Frameworks */ = {
@@ -398,7 +416,7 @@
 			files = (
 				A850EE6D25A4FBA10001A433 /* IntroductionViewController.xib in Resources */,
 				A850EDF725A4A2080001A433 /* LaunchScreen.storyboard in Resources */,
-				A850EE9F25A5017E0001A433 /* FeedDetailViewController.xib in Resources */,
+				A850EE9F25A5017E0001A433 /* CommunicationViewController.xib in Resources */,
 				A850EEA225A501880001A433 /* FeedsViewController.xib in Resources */,
 				A850EDF425A4A2080001A433 /* Assets.xcassets in Resources */,
 				A850EE2825A4AAEC0001A433 /* search.json in Resources */,
@@ -480,24 +498,30 @@
 				A850EE7C25A4FD370001A433 /* PostPOSO.swift in Sources */,
 				A850EE4725A4AF970001A433 /* Coordinator.swift in Sources */,
 				A850EE3825A4ADAE0001A433 /* Configuration.swift in Sources */,
+				A879735525A50E2E00ACD951 /* CommunicationViewModel.swift in Sources */,
 				A850EE5025A4B58A0001A433 /* ApplicationCoordinator.swift in Sources */,
 				A850EE4925A4AF970001A433 /* Router.swift in Sources */,
+				A879735A25A50E6400ACD951 /* CommunicationView.swift in Sources */,
+				A879734B25A50DBB00ACD951 /* FeedsView.swift in Sources */,
 				A850EE5825A4B7550001A433 /* Alias.swift in Sources */,
 				A850EE3425A4AD960001A433 /* ConfigurationManager.swift in Sources */,
 				A850EE4825A4AF970001A433 /* Dismissable.swift in Sources */,
 				A879732825A50B7900ACD951 /* R.generated.swift in Sources */,
+				A879734F25A50DC400ACD951 /* FeedsViewModel.swift in Sources */,
 				A850EDEF25A4A2060001A433 /* IntroductionViewController.swift in Sources */,
 				A850EE7625A4FCFE0001A433 /* FeedPOSO.swift in Sources */,
 				A850EDEB25A4A2060001A433 /* AppDelegate.swift in Sources */,
+				A879735225A50DCE00ACD951 /* IntroductionViewModel.swift in Sources */,
 				A850EE5325A4B6A70001A433 /* FeedsCoordinator.swift in Sources */,
 				A850EE8225A4FE330001A433 /* FeedsViewController.swift in Sources */,
 				A850EE4D25A4B3930001A433 /* FeedsController.swift in Sources */,
 				A850EE4625A4AF970001A433 /* BaseCoordinator.swift in Sources */,
 				A850EE2325A4AAC00001A433 /* Animations.swift in Sources */,
 				A850EE4A25A4AF970001A433 /* Presentable.swift in Sources */,
+				A879734825A50D6F00ACD951 /* IntroductionView.swift in Sources */,
 				A850EE7125A4FC200001A433 /* IntroductionCoordinator.swift in Sources */,
 				A850EDED25A4A2060001A433 /* SceneDelegate.swift in Sources */,
-				A850EE8625A4FE3C0001A433 /* FeedDetailViewController.swift in Sources */,
+				A850EE8625A4FE3C0001A433 /* CommunicationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

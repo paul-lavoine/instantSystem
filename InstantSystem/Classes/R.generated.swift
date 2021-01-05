@@ -193,18 +193,18 @@ struct R: Rswift.Validatable {
 
   /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
-    /// Nib `FeedDetailViewController`.
-    static let feedDetailViewController = _R.nib._FeedDetailViewController()
+    /// Nib `CommunicationViewController`.
+    static let communicationViewController = _R.nib._CommunicationViewController()
     /// Nib `FeedsViewController`.
     static let feedsViewController = _R.nib._FeedsViewController()
     /// Nib `IntroductionViewController`.
     static let introductionViewController = _R.nib._IntroductionViewController()
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "FeedDetailViewController", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.feedDetailViewController) instead")
-    static func feedDetailViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.feedDetailViewController)
+    /// `UINib(name: "CommunicationViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.communicationViewController) instead")
+    static func communicationViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.communicationViewController)
     }
     #endif
 
@@ -224,8 +224,8 @@ struct R: Rswift.Validatable {
     }
     #endif
 
-    static func feedDetailViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.feedDetailViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    static func communicationViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.communicationViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func feedsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -261,9 +261,9 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
-    struct _FeedDetailViewController: Rswift.NibResourceType {
+    struct _CommunicationViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
-      let name = "FeedDetailViewController"
+      let name = "CommunicationViewController"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
