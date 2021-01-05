@@ -1,5 +1,5 @@
 //
-//  CommunicationViewModel.swift
+//  PostViewModel.swift
 //  InstantSystem
 //
 //  Created by Paul_Lavoine on 05/01/2021.
@@ -8,11 +8,11 @@
 import UIKit
 import Rswift
 
-class CommunicationViewController: UIViewController {
+class PostViewController: UIViewController {
     
     // MARK: - Constructors
     required init(with feedsController: FeedsController) {
-        super.init(nibName: R.nib.communicationViewController.name, bundle: R.nib.communicationViewController.bundle)
+        super.init(nibName: R.nib.PostViewController.name, bundle: R.nib.PostViewController.bundle)
     }
     
     required init?(coder: NSCoder) {
