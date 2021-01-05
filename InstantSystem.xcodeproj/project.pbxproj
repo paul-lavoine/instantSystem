@@ -34,9 +34,9 @@
 		A850EE7C25A4FD370001A433 /* PostPOSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE7B25A4FD370001A433 /* PostPOSO.swift */; };
 		A850EE8225A4FE330001A433 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE8125A4FE330001A433 /* FeedsViewController.swift */; };
 		A850EE8625A4FE3C0001A433 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */; };
-		A850EE9C25A500DB0001A433 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE9B25A500DB0001A433 /* R.generated.swift */; };
 		A850EE9F25A5017E0001A433 /* FeedDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */; };
 		A850EEA225A501880001A433 /* FeedsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EEA125A501880001A433 /* FeedsViewController.xib */; };
+		A879732825A50B7900ACD951 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879732725A50B7900ACD951 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,9 +70,9 @@
 		A850EE7B25A4FD370001A433 /* PostPOSO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPOSO.swift; sourceTree = "<group>"; };
 		A850EE8125A4FE330001A433 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
-		A850EE9B25A500DB0001A433 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailViewController.xib; sourceTree = "<group>"; };
 		A850EEA125A501880001A433 /* FeedsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsViewController.xib; sourceTree = "<group>"; };
+		A879732725A50B7900ACD951 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				A850EDEA25A4A2060001A433 /* AppDelegate.swift */,
-				A850EE9B25A500DB0001A433 /* R.generated.swift */,
+				A879732725A50B7900ACD951 /* R.generated.swift */,
 				A850EDEC25A4A2060001A433 /* SceneDelegate.swift */,
 				A850EE0A25A4A2A00001A433 /* Coordinators */,
 				A850EE0C25A4A2C90001A433 /* Data */,
@@ -344,7 +344,7 @@
 			buildConfigurationList = A850EDFB25A4A2080001A433 /* Build configuration list for PBXNativeTarget "InstantSystem" */;
 			buildPhases = (
 				D985616081954AE889807988 /* [CP] Check Pods Manifest.lock */,
-				A850EE9825A5006B0001A433 /* ShellScript */,
+				A850EE9825A5006B0001A433 /* R.swift */,
 				A850EDE325A4A2060001A433 /* Sources */,
 				A850EDE425A4A2060001A433 /* Frameworks */,
 				A850EDE525A4A2060001A433 /* Resources */,
@@ -410,7 +410,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A850EE9825A5006B0001A433 /* ShellScript */ = {
+		A850EE9825A5006B0001A433 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			dependencyFile = "$(DERIVED_FILES_DIR)/$(INPUT_FILE_PATH).d";
@@ -421,14 +421,15 @@
 			inputPaths = (
 				"$TEMP_DIR/rswift-lastrun",
 			);
+			name = R.swift;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				$SRCROOT/InstantSystem/Classes/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/InstantSystem/Classes/R.generated.swift\"\n";
 		};
 		CB4B9A03182A041B3AD6BD31 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -484,7 +485,7 @@
 				A850EE5825A4B7550001A433 /* Alias.swift in Sources */,
 				A850EE3425A4AD960001A433 /* ConfigurationManager.swift in Sources */,
 				A850EE4825A4AF970001A433 /* Dismissable.swift in Sources */,
-				A850EE9C25A500DB0001A433 /* R.generated.swift in Sources */,
+				A879732825A50B7900ACD951 /* R.generated.swift in Sources */,
 				A850EDEF25A4A2060001A433 /* IntroductionViewController.swift in Sources */,
 				A850EE7625A4FCFE0001A433 /* FeedPOSO.swift in Sources */,
 				A850EDEB25A4A2060001A433 /* AppDelegate.swift in Sources */,
