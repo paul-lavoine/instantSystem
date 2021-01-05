@@ -17,6 +17,6 @@ target 'InstantSystem' do
   pod 'lottie-ios', '~> 3.1.9'
 
    # Tools
-    pod 'R.swift'
+    pod 'R.swift', '~> 5.3.1'
 
 end
