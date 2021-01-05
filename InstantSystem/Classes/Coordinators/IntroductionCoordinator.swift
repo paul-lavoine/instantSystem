@@ -1,0 +1,35 @@
+//
+//  IntroductionCoordinator.swift
+//  InstantSystem
+//
+//  Created by Paul_Lavoine on 05/01/2021.
+//
+
+import Foundation
+
+class IntroductionCoordinator: BaseCoordinator {
+
+    // MARK: - Constructors
+    init(with feedsController: FeedsController, router: Router) {
+
+        super.init(feedsController: feedsController, router: router)
+    }
+
+    // MARK: - Coordinator life cycle
+    override func start() {
+        let intro = IntroductionViewController(with: feedsController)
+
+        router.push(intro) {
+            self.executeCompletion()
+        }
+    }
+
+    // MARK: - Navigation
+    func show() {
+        let coordinator = FeedsCoordinator(with: feedsController, router: router)
+        coordinator.onComplete = buildAutoRemoveBlock(for: coordinator)
+
+        add(coordinator)
+        coordinator.start()
+    }
+}

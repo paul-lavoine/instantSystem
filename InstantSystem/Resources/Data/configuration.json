@@ -1,0 +1,7 @@
+{
+    "server" : {
+        "scheme" : "https",
+        "host" : "www.lesnumeriques.com",
+        "path": "/rss.xml",
+    }
+}

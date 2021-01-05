@@ -3,17 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A80AED135F502D3A32453237 /* Pods_InstantSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */; };
 		A850EDEB25A4A2060001A433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EDEA25A4A2060001A433 /* AppDelegate.swift */; };
 		A850EDED25A4A2060001A433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EDEC25A4A2060001A433 /* SceneDelegate.swift */; };
-		A850EDEF25A4A2060001A433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EDEE25A4A2060001A433 /* ViewController.swift */; };
-		A850EDF225A4A2060001A433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A850EDF025A4A2060001A433 /* Main.storyboard */; };
+		A850EDEF25A4A2060001A433 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EDEE25A4A2060001A433 /* IntroductionViewController.swift */; };
 		A850EDF425A4A2080001A433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A850EDF325A4A2080001A433 /* Assets.xcassets */; };
 		A850EDF725A4A2080001A433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A850EDF525A4A2080001A433 /* LaunchScreen.storyboard */; };
+		A850EE2325A4AAC00001A433 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE2225A4AAC00001A433 /* Animations.swift */; };
+		A850EE2725A4AAEC0001A433 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = A850EE2525A4AAEC0001A433 /* loader.json */; };
+		A850EE2825A4AAEC0001A433 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = A850EE2625A4AAEC0001A433 /* search.json */; };
+		A850EE2F25A4ACDC0001A433 /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = A850EE2E25A4ACDC0001A433 /* configuration.json */; };
+		A850EE3425A4AD960001A433 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE3325A4AD960001A433 /* ConfigurationManager.swift */; };
+		A850EE3825A4ADAE0001A433 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE3725A4ADAE0001A433 /* Configuration.swift */; };
+		A850EE4625A4AF970001A433 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE4125A4AF970001A433 /* BaseCoordinator.swift */; };
+		A850EE4725A4AF970001A433 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE4225A4AF970001A433 /* Coordinator.swift */; };
+		A850EE4825A4AF970001A433 /* Dismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE4325A4AF970001A433 /* Dismissable.swift */; };
+		A850EE4925A4AF970001A433 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE4425A4AF970001A433 /* Router.swift */; };
+		A850EE4A25A4AF970001A433 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE4525A4AF970001A433 /* Presentable.swift */; };
+		A850EE4D25A4B3930001A433 /* FeedsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE4C25A4B3930001A433 /* FeedsController.swift */; };
+		A850EE5025A4B58A0001A433 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE4F25A4B58A0001A433 /* ApplicationCoordinator.swift */; };
+		A850EE5325A4B6A70001A433 /* FeedsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE5225A4B6A70001A433 /* FeedsCoordinator.swift */; };
+		A850EE5825A4B7550001A433 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE5725A4B7550001A433 /* Alias.swift */; };
+		A850EE6D25A4FBA10001A433 /* IntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EE6C25A4FBA10001A433 /* IntroductionViewController.xib */; };
+		A850EE7125A4FC200001A433 /* IntroductionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE7025A4FC200001A433 /* IntroductionCoordinator.swift */; };
+		A850EE7625A4FCFE0001A433 /* FeedPOSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE7525A4FCFE0001A433 /* FeedPOSO.swift */; };
+		A850EE7C25A4FD370001A433 /* PostPOSO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE7B25A4FD370001A433 /* PostPOSO.swift */; };
+		A850EE8225A4FE330001A433 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE8125A4FE330001A433 /* FeedsViewController.swift */; };
+		A850EE8625A4FE3C0001A433 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */; };
+		A850EE9C25A500DB0001A433 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EE9B25A500DB0001A433 /* R.generated.swift */; };
+		A850EE9F25A5017E0001A433 /* FeedDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */; };
+		A850EEA225A501880001A433 /* FeedsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A850EEA125A501880001A433 /* FeedsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +45,34 @@
 		A850EDE725A4A2060001A433 /* InstantSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A850EDEA25A4A2060001A433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A850EDEC25A4A2060001A433 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A850EDEE25A4A2060001A433 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A850EDF125A4A2060001A433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A850EDEE25A4A2060001A433 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		A850EDF325A4A2080001A433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A850EDF625A4A2080001A433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A850EDF825A4A2080001A433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A850EE2225A4AAC00001A433 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		A850EE2525A4AAEC0001A433 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		A850EE2625A4AAEC0001A433 /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		A850EE2E25A4ACDC0001A433 /* configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = configuration.json; sourceTree = "<group>"; };
+		A850EE3325A4AD960001A433 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		A850EE3725A4ADAE0001A433 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A850EE4125A4AF970001A433 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		A850EE4225A4AF970001A433 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A850EE4325A4AF970001A433 /* Dismissable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dismissable.swift; sourceTree = "<group>"; };
+		A850EE4425A4AF970001A433 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A850EE4525A4AF970001A433 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		A850EE4C25A4B3930001A433 /* FeedsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsController.swift; sourceTree = "<group>"; };
+		A850EE4F25A4B58A0001A433 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApplicationCoordinator.swift; path = Base/ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		A850EE5225A4B6A70001A433 /* FeedsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsCoordinator.swift; sourceTree = "<group>"; };
+		A850EE5725A4B7550001A433 /* Alias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias.swift; sourceTree = "<group>"; };
+		A850EE6C25A4FBA10001A433 /* IntroductionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroductionViewController.xib; sourceTree = "<group>"; };
+		A850EE7025A4FC200001A433 /* IntroductionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionCoordinator.swift; sourceTree = "<group>"; };
+		A850EE7525A4FCFE0001A433 /* FeedPOSO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPOSO.swift; sourceTree = "<group>"; };
+		A850EE7B25A4FD370001A433 /* PostPOSO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPOSO.swift; sourceTree = "<group>"; };
+		A850EE8125A4FE330001A433 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		A850EE9B25A500DB0001A433 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailViewController.xib; sourceTree = "<group>"; };
+		A850EEA125A501880001A433 /* FeedsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsViewController.xib; sourceTree = "<group>"; };
 		BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,7 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				A850EDF825A4A2080001A433 /* Info.plist */,
+				A850EE2A25A4AAF50001A433 /* Animations */,
 				A850EE1025A4A3300001A433 /* Assets */,
+				A850EE2D25A4ACBF0001A433 /* Data */,
 				A850EE1125A4A3350001A433 /* Localizables */,
 				A850EE0F25A4A3260001A433 /* Storyboards */,
 			);
@@ -84,27 +132,31 @@
 			isa = PBXGroup;
 			children = (
 				A850EDEA25A4A2060001A433 /* AppDelegate.swift */,
+				A850EE9B25A500DB0001A433 /* R.generated.swift */,
 				A850EDEC25A4A2060001A433 /* SceneDelegate.swift */,
 				A850EE0A25A4A2A00001A433 /* Coordinators */,
 				A850EE0C25A4A2C90001A433 /* Data */,
-				A850EE0D25A4A2FB0001A433 /* Extension */,
+				A850EE0D25A4A2FB0001A433 /* Extensions */,
 				A850EE0E25A4A3010001A433 /* Utils */,
-				A850EE0425A4A25D0001A433 /* ViewController */,
+				A850EE0425A4A25D0001A433 /* ViewControllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		A850EE0425A4A25D0001A433 /* ViewController */ = {
+		A850EE0425A4A25D0001A433 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A850EDEE25A4A2060001A433 /* ViewController.swift */,
+				A850EE7F25A4FE1C0001A433 /* Feeds */,
+				A850EE8025A4FE200001A433 /* FeedDetail */,
+				A850EE6B25A4FB8B0001A433 /* Introduction */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A850EE0525A4A2670001A433 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				A850EE4C25A4B3930001A433 /* FeedsController.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -112,6 +164,8 @@
 		A850EE0925A4A2970001A433 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A850EE7425A4FCF30001A433 /* Feed */,
+				A850EE7825A4FD200001A433 /* Post */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +173,10 @@
 		A850EE0A25A4A2A00001A433 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				A850EE4F25A4B58A0001A433 /* ApplicationCoordinator.swift */,
+				A850EE5225A4B6A70001A433 /* FeedsCoordinator.swift */,
+				A850EE7025A4FC200001A433 /* IntroductionCoordinator.swift */,
+				A850EE4025A4AF690001A433 /* Base */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -133,6 +191,7 @@
 		A850EE0C25A4A2C90001A433 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A850EE2225A4AAC00001A433 /* Animations.swift */,
 				A850EE0925A4A2970001A433 /* Model */,
 				A850EE0B25A4A2C30001A433 /* POSO */,
 				A850EE0525A4A2670001A433 /* Server */,
@@ -140,16 +199,18 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		A850EE0D25A4A2FB0001A433 /* Extension */ = {
+		A850EE0D25A4A2FB0001A433 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A850EE0E25A4A3010001A433 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A850EE5725A4B7550001A433 /* Alias.swift */,
+				A850EE3225A4AD7E0001A433 /* ConfigurationManager */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -157,7 +218,6 @@
 		A850EE0F25A4A3260001A433 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				A850EDF025A4A2060001A433 /* Main.storyboard */,
 				A850EDF525A4A2080001A433 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -178,6 +238,87 @@
 			path = Localizables;
 			sourceTree = "<group>";
 		};
+		A850EE2A25A4AAF50001A433 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE2525A4AAEC0001A433 /* loader.json */,
+				A850EE2625A4AAEC0001A433 /* search.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A850EE2D25A4ACBF0001A433 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE2E25A4ACDC0001A433 /* configuration.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A850EE3225A4AD7E0001A433 /* ConfigurationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE3325A4AD960001A433 /* ConfigurationManager.swift */,
+				A850EE3725A4ADAE0001A433 /* Configuration.swift */,
+			);
+			path = ConfigurationManager;
+			sourceTree = "<group>";
+		};
+		A850EE4025A4AF690001A433 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE4125A4AF970001A433 /* BaseCoordinator.swift */,
+				A850EE4225A4AF970001A433 /* Coordinator.swift */,
+				A850EE4325A4AF970001A433 /* Dismissable.swift */,
+				A850EE4525A4AF970001A433 /* Presentable.swift */,
+				A850EE4425A4AF970001A433 /* Router.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A850EE6B25A4FB8B0001A433 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				A850EDEE25A4A2060001A433 /* IntroductionViewController.swift */,
+				A850EE6C25A4FBA10001A433 /* IntroductionViewController.xib */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		A850EE7425A4FCF30001A433 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE7525A4FCFE0001A433 /* FeedPOSO.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A850EE7825A4FD200001A433 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE7B25A4FD370001A433 /* PostPOSO.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		A850EE7F25A4FE1C0001A433 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE8125A4FE330001A433 /* FeedsViewController.swift */,
+				A850EEA125A501880001A433 /* FeedsViewController.xib */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		A850EE8025A4FE200001A433 /* FeedDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A850EE8525A4FE3C0001A433 /* FeedDetailViewController.swift */,
+				A850EE9E25A5017E0001A433 /* FeedDetailViewController.xib */,
+			);
+			path = FeedDetail;
+			sourceTree = "<group>";
+		};
 		CCC8E4962176C5188D5FB94B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +333,6 @@
 				A4CA450F12037A914A37C50D /* Pods-InstantSystem.debug.xcconfig */,
 				02740C5B19535DA4441975BB /* Pods-InstantSystem.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -204,9 +344,11 @@
 			buildConfigurationList = A850EDFB25A4A2080001A433 /* Build configuration list for PBXNativeTarget "InstantSystem" */;
 			buildPhases = (
 				D985616081954AE889807988 /* [CP] Check Pods Manifest.lock */,
+				A850EE9825A5006B0001A433 /* ShellScript */,
 				A850EDE325A4A2060001A433 /* Sources */,
 				A850EDE425A4A2060001A433 /* Frameworks */,
 				A850EDE525A4A2060001A433 /* Resources */,
+				CB4B9A03182A041B3AD6BD31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,15 +396,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A850EE6D25A4FBA10001A433 /* IntroductionViewController.xib in Resources */,
 				A850EDF725A4A2080001A433 /* LaunchScreen.storyboard in Resources */,
+				A850EE9F25A5017E0001A433 /* FeedDetailViewController.xib in Resources */,
+				A850EEA225A501880001A433 /* FeedsViewController.xib in Resources */,
 				A850EDF425A4A2080001A433 /* Assets.xcassets in Resources */,
-				A850EDF225A4A2060001A433 /* Main.storyboard in Resources */,
+				A850EE2825A4AAEC0001A433 /* search.json in Resources */,
+				A850EE2F25A4ACDC0001A433 /* configuration.json in Resources */,
+				A850EE2725A4AAEC0001A433 /* loader.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A850EE9825A5006B0001A433 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			dependencyFile = "$(DERIVED_FILES_DIR)/$(INPUT_FILE_PATH).d";
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		CB4B9A03182A041B3AD6BD31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D985616081954AE889807988 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,23 +476,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A850EDEF25A4A2060001A433 /* ViewController.swift in Sources */,
+				A850EE7C25A4FD370001A433 /* PostPOSO.swift in Sources */,
+				A850EE4725A4AF970001A433 /* Coordinator.swift in Sources */,
+				A850EE3825A4ADAE0001A433 /* Configuration.swift in Sources */,
+				A850EE5025A4B58A0001A433 /* ApplicationCoordinator.swift in Sources */,
+				A850EE4925A4AF970001A433 /* Router.swift in Sources */,
+				A850EE5825A4B7550001A433 /* Alias.swift in Sources */,
+				A850EE3425A4AD960001A433 /* ConfigurationManager.swift in Sources */,
+				A850EE4825A4AF970001A433 /* Dismissable.swift in Sources */,
+				A850EE9C25A500DB0001A433 /* R.generated.swift in Sources */,
+				A850EDEF25A4A2060001A433 /* IntroductionViewController.swift in Sources */,
+				A850EE7625A4FCFE0001A433 /* FeedPOSO.swift in Sources */,
 				A850EDEB25A4A2060001A433 /* AppDelegate.swift in Sources */,
+				A850EE5325A4B6A70001A433 /* FeedsCoordinator.swift in Sources */,
+				A850EE8225A4FE330001A433 /* FeedsViewController.swift in Sources */,
+				A850EE4D25A4B3930001A433 /* FeedsController.swift in Sources */,
+				A850EE4625A4AF970001A433 /* BaseCoordinator.swift in Sources */,
+				A850EE2325A4AAC00001A433 /* Animations.swift in Sources */,
+				A850EE4A25A4AF970001A433 /* Presentable.swift in Sources */,
+				A850EE7125A4FC200001A433 /* IntroductionCoordinator.swift in Sources */,
 				A850EDED25A4A2060001A433 /* SceneDelegate.swift in Sources */,
+				A850EE8625A4FE3C0001A433 /* FeedDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A850EDF025A4A2060001A433 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A850EDF125A4A2060001A433 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A850EDF525A4A2080001A433 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -371,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -426,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,7 +638,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM4F765E5B;
-				INFOPLIST_FILE = InstantSystem/Info.plist;
+				INFOPLIST_FILE = InstantSystem/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +658,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM4F765E5B;
-				INFOPLIST_FILE = InstantSystem/Info.plist;
+				INFOPLIST_FILE = InstantSystem/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

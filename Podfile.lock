@@ -1,3 +1,39 @@
-PODFILE CHECKSUM: d1684528fee711c1f02db156d98bb8032fc0b0bd
+PODS:
+  - Alamofire (5.0.5)
+  - AlamofireNetworkActivityIndicator (3.0.1):
+    - Alamofire (~> 5.0)
+  - lottie-ios (3.1.9)
+  - R.swift (5.3.1):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SDWebImage (5.9.5):
+    - SDWebImage/Core (= 5.9.5)
+  - SDWebImage/Core (5.9.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0)
+  - AlamofireNetworkActivityIndicator (~> 3.0.0)
+  - lottie-ios (~> 3.1.9)
+  - R.swift
+  - SDWebImage (~> 5.9.4)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - lottie-ios
+    - R.swift
+    - R.swift.Library
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  AlamofireNetworkActivityIndicator: f7d4cd8d12bcf61dc569cbe000b0c35e9c8d8d32
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
+
+PODFILE CHECKSUM: 3a74b14693d5d34dbba9e257caee7cb0ed767716
 
 COCOAPODS: 1.10.0
