@@ -9,6 +9,7 @@ PODS:
   - SDWebImage (5.9.5):
     - SDWebImage/Core (= 5.9.5)
   - SDWebImage/Core (5.9.5)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - lottie-ios (~> 3.1.9)
   - R.swift (~> 5.3.1)
   - SDWebImage (~> 5.9.4)
+  - SnapKit (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - SDWebImage
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
@@ -33,7 +36,8 @@ SPEC CHECKSUMS:
   R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SDWebImage: 0b2ba0d56479bf6a45ecddbfd5558bea93150d25
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 54b8fa2fcb68331d81417d8a5e85802c1fb0dd18
+PODFILE CHECKSUM: bdbbb17b0a9a2c1df4511670f508f5590413ac32
 
 COCOAPODS: 1.10.0

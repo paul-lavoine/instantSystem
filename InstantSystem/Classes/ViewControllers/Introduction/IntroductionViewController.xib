@@ -11,23 +11,56 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroductionViewController" customModule="InstantSystem" customModuleProvider="target">
             <connections>
-                <outlet property="startButton" destination="6CE-Lb-MMl" id="NKT-FX-27S"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ueU-ck-jaU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IntroductionView" customModule="InstantSystem" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CE-Lb-MMl">
-                    <rect key="frame" x="185" y="631" width="66" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nC-Lf-eC7">
+                    <rect key="frame" x="0.0" y="44" width="414" height="668"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubm-c2-f36">
+                            <rect key="frame" x="100" y="227" width="214" height="214"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ubm-c2-f36" secondAttribute="height" id="xwH-wE-nWa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ubm-c2-f36" firstAttribute="centerY" secondItem="8nC-Lf-eC7" secondAttribute="centerY" id="EYJ-FO-Aa2"/>
+                        <constraint firstItem="ubm-c2-f36" firstAttribute="centerX" secondItem="8nC-Lf-eC7" secondAttribute="centerX" id="hQs-Pt-p29"/>
+                        <constraint firstItem="ubm-c2-f36" firstAttribute="leading" secondItem="8nC-Lf-eC7" secondAttribute="leading" constant="100" id="wqS-ay-HQ7"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CE-Lb-MMl">
+                    <rect key="frame" x="0.0" y="712" width="414" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Yeq-fk-H0L"/>
+                    </constraints>
                     <state key="normal" title="COUCOU"/>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6CE-Lb-MMl" secondAttribute="bottom" constant="100" id="6TZ-zk-nkj"/>
+                <constraint firstItem="6CE-Lb-MMl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="HM0-yR-rqk"/>
+                <constraint firstItem="8nC-Lf-eC7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PtC-85-Zkd"/>
+                <constraint firstItem="6CE-Lb-MMl" firstAttribute="top" secondItem="8nC-Lf-eC7" secondAttribute="bottom" id="Q3h-qY-agj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6CE-Lb-MMl" secondAttribute="trailing" id="SGD-iT-Eaw"/>
+                <constraint firstItem="8nC-Lf-eC7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZID-zh-cDR"/>
+                <constraint firstItem="6CE-Lb-MMl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eEI-9E-bLD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8nC-Lf-eC7" secondAttribute="trailing" id="o7L-r8-bUf"/>
+            </constraints>
+            <connections>
+                <outlet property="startButton" destination="6CE-Lb-MMl" id="MGf-yx-qqy"/>
+                <outlet property="supportView" destination="ubm-c2-f36" id="6Uo-5M-j25"/>
+            </connections>
             <point key="canvasLocation" x="138" y="153"/>
         </view>
     </objects>

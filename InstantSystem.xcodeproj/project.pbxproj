@@ -43,6 +43,7 @@
 		A879735225A50DCE00ACD951 /* IntroductionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879735125A50DCE00ACD951 /* IntroductionViewModel.swift */; };
 		A879735525A50E2E00ACD951 /* CommunicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879735425A50E2E00ACD951 /* CommunicationViewModel.swift */; };
 		A879735A25A50E6400ACD951 /* CommunicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879735925A50E6400ACD951 /* CommunicationView.swift */; };
+		A879735E25A50F7700ACD951 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A879735D25A50F7700ACD951 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		A879735125A50DCE00ACD951 /* IntroductionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewModel.swift; sourceTree = "<group>"; };
 		A879735425A50E2E00ACD951 /* CommunicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationViewModel.swift; sourceTree = "<group>"; };
 		A879735925A50E6400ACD951 /* CommunicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationView.swift; sourceTree = "<group>"; };
+		A879735D25A50F7700ACD951 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -246,6 +248,7 @@
 		A850EE1125A4A3350001A433 /* Localizables */ = {
 			isa = PBXGroup;
 			children = (
+				A879735D25A50F7700ACD951 /* Localizable.strings */,
 			);
 			path = Localizables;
 			sourceTree = "<group>";
@@ -318,9 +321,9 @@
 		A850EE7F25A4FE1C0001A433 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
+				A879734A25A50DBB00ACD951 /* FeedsView.swift */,
 				A850EE8125A4FE330001A433 /* FeedsViewController.swift */,
 				A850EEA125A501880001A433 /* FeedsViewController.xib */,
-				A879734A25A50DBB00ACD951 /* FeedsView.swift */,
 				A879734E25A50DC400ACD951 /* FeedsViewModel.swift */,
 			);
 			path = Feeds;
@@ -329,10 +332,10 @@
 		A850EE8025A4FE200001A433 /* Communication */ = {
 			isa = PBXGroup;
 			children = (
+				A879735925A50E6400ACD951 /* CommunicationView.swift */,
 				A850EE8525A4FE3C0001A433 /* CommunicationViewController.swift */,
 				A850EE9E25A5017E0001A433 /* CommunicationViewController.xib */,
 				A879735425A50E2E00ACD951 /* CommunicationViewModel.swift */,
-				A879735925A50E6400ACD951 /* CommunicationView.swift */,
 			);
 			path = Communication;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				A850EDF725A4A2080001A433 /* LaunchScreen.storyboard in Resources */,
 				A850EE9F25A5017E0001A433 /* CommunicationViewController.xib in Resources */,
 				A850EEA225A501880001A433 /* FeedsViewController.xib in Resources */,
+				A879735E25A50F7700ACD951 /* Localizable.strings in Resources */,
 				A850EDF425A4A2080001A433 /* Assets.xcassets in Resources */,
 				A850EE2825A4AAEC0001A433 /* search.json in Resources */,
 				A850EE2F25A4ACDC0001A433 /* configuration.json in Resources */,

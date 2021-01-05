@@ -14,7 +14,8 @@ target 'InstantSystem' do
 	pod 'SDWebImage', '~> 5.9.4'
 
 	#UI Components
-  pod 'lottie-ios', '~> 3.1.9'
+    pod 'SnapKit', '~> 5.0.1'
+    pod 'lottie-ios', '~> 3.1.9'
 
    # Tools
     pod 'R.swift', '~> 5.3.1'

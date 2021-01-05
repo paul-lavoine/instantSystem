@@ -22,6 +22,6 @@ enum Animations: String {
     }
 
     func loopMode() -> LottieLoopMode {
-        self == .loader ? LottieLoopMode.loop : LottieLoopMode.playOnce
+        self == .search ? LottieLoopMode.playOnce : LottieLoopMode.loop
     }
 }

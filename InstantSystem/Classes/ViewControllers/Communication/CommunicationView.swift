@@ -5,4 +5,8 @@
 //  Created by Paul_Lavoine on 05/01/2021.
 //
 
-import Foundation
+import UIKit
+
+class CommunicationView: UIView {
+    
+}

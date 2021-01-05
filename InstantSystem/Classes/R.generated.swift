@@ -232,8 +232,34 @@ struct R: Rswift.Validatable {
       return R.nib.feedsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
-    static func introductionViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.introductionViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    static func introductionViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> IntroductionView? {
+      return R.nib.introductionViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? IntroductionView
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  struct string {
+    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    struct localizable {
+      /// Value: Start
+      static let introductionViewControllerContinueButton = Rswift.StringResource(key: "IntroductionViewController.continue.button", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: Start
+      static func introductionViewControllerContinueButton(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("IntroductionViewController.continue.button", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "IntroductionViewController.continue.button"
+        }
+
+        return NSLocalizedString("IntroductionViewController.continue.button", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
     }
 
     fileprivate init() {}
@@ -287,8 +313,8 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "IntroductionViewController"
 
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> IntroductionView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? IntroductionView
       }
 
       fileprivate init() {}
