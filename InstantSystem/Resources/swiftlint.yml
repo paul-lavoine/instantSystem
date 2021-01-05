@@ -1,0 +1,17 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Carthage
+- Pods
+- microblogging/Classes/R.generated.swift
+
+line_length: 250
+type_body_length: 250
+type_name:
+    max_length:
+        warning: 100
+
+large_tuple:
+    warning: 3
+    error: 5
+
+nesting:
+    type_level: 3
