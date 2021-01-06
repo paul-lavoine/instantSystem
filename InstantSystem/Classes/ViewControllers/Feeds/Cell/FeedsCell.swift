@@ -19,11 +19,8 @@ class FeedsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        /// Gradient
-        let layer = CAGradientLayer()
-        layer.frame = gradientView.frame
-        layer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
-        gradientView.layer.addSublayer(layer)
+        let layer = gradient(frame: gradientView.bounds)
+        gradientView.layer.insertSublayer(layer, at:0)
     }
     
     override func prepareForReuse() {
@@ -42,5 +39,15 @@ class FeedsCell: UITableViewCell {
         if let url = URL(string: post.image.url) {
             postImageView.sd_setImage(with: url, completed: nil)
         }
+    }
+    
+    // MARK: - UI Components
+    func gradient(frame: CGRect) -> CAGradientLayer {
+        let layer = CAGradientLayer()
+        layer.frame = frame
+        layer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        layer.startPoint = CGPoint(x: 0, y: 0)
+        layer.endPoint   = CGPoint(x: 0, y: 0.7)
+        return layer
     }
 }
