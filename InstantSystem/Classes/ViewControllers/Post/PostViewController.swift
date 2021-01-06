@@ -12,7 +12,7 @@ class PostViewController: UIViewController {
     
     // MARK: - Constructors
     required init(with feedsController: FeedsController) {
-        super.init(nibName: R.nib.PostViewController.name, bundle: R.nib.PostViewController.bundle)
+        super.init(nibName: R.nib.postViewController.name, bundle: R.nib.postViewController.bundle)
     }
     
     required init?(coder: NSCoder) {

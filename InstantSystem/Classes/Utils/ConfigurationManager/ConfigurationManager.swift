@@ -17,10 +17,10 @@ class ConfigurationManager {
     private init() {}
 
     // MARK: - Static constructor
-    static func mainConfiguration() -> Configuration? {
+    static func mainConfiguration() -> Configuration {
         // Locate file in main bundle
         guard let fileUrl = Bundle.main.url(forResource: Consts.filename, withExtension: nil) else {
-            return nil
+            fatalError("Cannot load configuration file. Please check format")
         }
 
         // Try to load configuration from json file
@@ -31,9 +31,7 @@ class ConfigurationManager {
             return configuration
         } catch {
             // Decoding error
-            print(error)
-
-            return nil
+            fatalError("\(error)")
         }
     }
 }

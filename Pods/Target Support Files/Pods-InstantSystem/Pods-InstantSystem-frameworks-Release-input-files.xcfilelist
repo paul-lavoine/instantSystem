@@ -1,7 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
 ${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework
 ${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

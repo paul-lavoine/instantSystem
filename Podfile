@@ -6,9 +6,9 @@ inhibit_all_warnings!
 
 target 'InstantSystem' do
 
-	# Network
-	pod 'Alamofire', '~> 5.0.0'
-  pod 'AlamofireNetworkActivityIndicator', '~> 3.0.0'
+	# Data
+	pod 'Moya', '~> 14.0.0'
+	pod 'XMLParsing', :git => 'https://github.com/ShawnMoore/XMLParsing.git'
 
 	# Media
 	pod 'SDWebImage', '~> 5.9.4'

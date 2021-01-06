@@ -24,21 +24,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let window = window else {
             fatalError("Cannot instantiate window")
         }
-
-        // Load configuration
-        guard let configuration = ConfigurationManager.mainConfiguration() else {
-            fatalError("Cannot load configuration file. Please check format")
-        }
         
         // Root navigation controller
         let navigationController = UINavigationController()
         navigationController.navigationBar.prefersLargeTitles = true
 
         // Build dependencies
-        let feedsController  = FeedsController(with: configuration)
+        let feedsController  = FeedsController()
         let router           = Router(navigationController: navigationController)
         
-        applicationCoordinator = ApplicationCoordinator(window: window, router: router, feeds: feedsController)
+        applicationCoordinator = ApplicationCoordinator(window: window, router: router, feedsController: feedsController)
         applicationCoordinator.start()
 
         window.rootViewController = router.rootViewController()

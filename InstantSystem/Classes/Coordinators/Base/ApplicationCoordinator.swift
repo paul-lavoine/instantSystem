@@ -13,10 +13,10 @@ class ApplicationCoordinator: BaseCoordinator {
     fileprivate let window: UIWindow
 
     // MARK: - Constructors
-    init(window: UIWindow, router: Router, feeds: FeedsController) {
+    init(window: UIWindow, router: Router, feedsController: FeedsController) {
         self.window = window
-
-        super.init(feedsController: feeds, router: router)
+        
+        super.init(feedsController: feedsController, router: router)
     }
 
     // MARK: - Coordinator life cycle

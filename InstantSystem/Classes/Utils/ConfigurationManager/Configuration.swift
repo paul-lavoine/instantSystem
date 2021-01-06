@@ -11,6 +11,10 @@ import Alamofire
 // MARK: - Configuration
 struct Configuration: Codable {
     let server: Server
+    
+    func baseURL() -> URL {
+        return URL(string: server.scheme + "://" + server.host)!
+    }
 }
 
 // MARK: - Server

@@ -130,12 +130,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 4 files.
   struct file {
     /// Resource file `configuration.json`.
     static let configurationJson = Rswift.FileResource(bundle: R.hostingBundle, name: "configuration", pathExtension: "json")
     /// Resource file `loader.json`.
     static let loaderJson = Rswift.FileResource(bundle: R.hostingBundle, name: "loader", pathExtension: "json")
+    /// Resource file `logo.json`.
+    static let logoJson = Rswift.FileResource(bundle: R.hostingBundle, name: "logo", pathExtension: "json")
     /// Resource file `search.json`.
     static let searchJson = Rswift.FileResource(bundle: R.hostingBundle, name: "search", pathExtension: "json")
 
@@ -148,6 +150,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "loader", withExtension: "json")`
     static func loaderJson(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.loaderJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "logo", withExtension: "json")`
+    static func logoJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.logoJson
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -193,20 +201,12 @@ struct R: Rswift.Validatable {
 
   /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
-    /// Nib `PostViewController`.
-    static let PostViewController = _R.nib._PostViewController()
     /// Nib `FeedsViewController`.
     static let feedsViewController = _R.nib._FeedsViewController()
     /// Nib `IntroductionViewController`.
     static let introductionViewController = _R.nib._IntroductionViewController()
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "PostViewController", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.PostViewController) instead")
-    static func PostViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.PostViewController)
-    }
-    #endif
+    /// Nib `PostViewController`.
+    static let postViewController = _R.nib._PostViewController()
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "FeedsViewController", in: bundle)`
@@ -224,16 +224,24 @@ struct R: Rswift.Validatable {
     }
     #endif
 
-    static func PostViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.PostViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "PostViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.postViewController) instead")
+    static func postViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.postViewController)
     }
+    #endif
 
-    static func feedsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.feedsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    static func feedsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedsView? {
+      return R.nib.feedsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedsView
     }
 
     static func introductionViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> IntroductionView? {
       return R.nib.introductionViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? IntroductionView
+    }
+
+    static func postViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PostView? {
+      return R.nib.postViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PostView
     }
 
     fileprivate init() {}
@@ -287,23 +295,12 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
-    struct _PostViewController: Rswift.NibResourceType {
-      let bundle = R.hostingBundle
-      let name = "PostViewController"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-
-      fileprivate init() {}
-    }
-
     struct _FeedsViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "FeedsViewController"
 
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedsView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedsView
       }
 
       fileprivate init() {}
@@ -315,6 +312,17 @@ struct _R: Rswift.Validatable {
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> IntroductionView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? IntroductionView
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _PostViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "PostViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PostView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PostView
       }
 
       fileprivate init() {}

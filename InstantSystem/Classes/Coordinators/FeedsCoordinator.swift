@@ -8,7 +8,6 @@
 import Foundation
 
 class FeedsCoordinator: BaseCoordinator {
-    // MARK: - Coordinator life cycle
     // MARK: - Constructors
     init(with feedsController: FeedsController, router: Router) {
 
