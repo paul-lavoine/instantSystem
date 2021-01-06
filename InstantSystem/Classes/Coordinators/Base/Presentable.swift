@@ -10,6 +10,7 @@ import UIKit
 
 /// Implement this protocol to expose view controllers to be presented
 protocol Presentable {
+    
     /// Return view controller to be presented
     func controllerToPresent() -> UIViewController
 }

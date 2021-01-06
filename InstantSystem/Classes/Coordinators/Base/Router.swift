@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class Router: NSObject {
+    
     // MARK: - Properties
     private let navigationController: UINavigationController
     private var completionBlocks = [UIViewController: SimpleCompletionBlock]()

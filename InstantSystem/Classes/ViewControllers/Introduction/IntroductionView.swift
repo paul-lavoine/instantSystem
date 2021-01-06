@@ -17,14 +17,16 @@ class IntroductionView: UIView {
     // MARK: UI Components
     private var animationView: AnimationView!
     
+    // MARK: - Callbacks
+    var displayFeedRequested: SimpleCompletionBlock?
+    
     // MARK: - View life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
 
         configureAnimation()
         
-        startButton.setTitle(R.string.localizable.introductionViewControllerContinueButton(),
-                             for: .normal)
+        startButton.setTitle(R.string.localizable.introductionViewControllerContinueButton(), for: .normal)
     }
     
     // MARK: - Animation
@@ -47,5 +49,12 @@ class IntroductionView: UIView {
         
         /// Start animation
         animationView.play()
+    }
+    
+    // MARK: - Actions
+    @IBAction func displayFeedAction(_ sender: Any) {
+        if let displayFeedRequested = displayFeedRequested {
+            displayFeedRequested()
+        }
     }
 }

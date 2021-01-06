@@ -8,8 +8,14 @@
 import UIKit
 
 class FeedsViewController: UIViewController {
+    
+    // MARK: - Properties
+    let feedsViewModel: FeedsViewModel
+    
     // MARK: - Constructors
-    required init(with feedsController: FeedsController) {
+    required init(with coordinator: FeedsCoordinator, feedsController: FeedsController) {
+        self.feedsViewModel = FeedsViewModel(with: coordinator, feedsController: feedsController)
+        
         super.init(nibName: R.nib.feedsViewController.name, bundle: R.nib.feedsViewController.bundle)
     }
     
@@ -20,6 +26,22 @@ class FeedsViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let view = feedsView()
+        view.tableView.register(FeedsCell.nib(), forCellReuseIdentifier: FeedsCell.reuseIdentifier())
+        view.tableView.dataSource = feedsViewModel
+        view.tableView.delegate = view
+        view.displayPostAt = { [weak self] indexPath in
+            self?.feedsViewModel.didSelectItem(at: indexPath)
+        }
+    }
+
+    // MARK: - Utils
+    private func feedsView() -> FeedsView {
+        guard let feedsView = view as? FeedsView else {
+            fatalError("<\(type(of: self.view))> found instead of expected FeedsView")
+        }
+
+        return feedsView
     }
 }

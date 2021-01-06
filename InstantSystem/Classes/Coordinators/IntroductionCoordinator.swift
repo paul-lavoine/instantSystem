@@ -17,7 +17,7 @@ class IntroductionCoordinator: BaseCoordinator {
 
     // MARK: - Coordinator life cycle
     override func start() {
-        let intro = IntroductionViewController(with: feedsController)
+        let intro = IntroductionViewController(with: self, feedsController: feedsController)
 
         router.push(intro) {
             self.executeCompletion()
@@ -25,7 +25,7 @@ class IntroductionCoordinator: BaseCoordinator {
     }
 
     // MARK: - Navigation
-    func show() {
+    func showFeed() {
         let coordinator = FeedsCoordinator(with: feedsController, router: router)
         coordinator.onComplete = buildAutoRemoveBlock(for: coordinator)
 

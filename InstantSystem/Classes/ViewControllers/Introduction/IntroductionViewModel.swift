@@ -7,4 +7,16 @@
 
 class IntroductionViewModel {
     
+    // MARK: - Properties
+    private var coordinator: IntroductionCoordinator
+    
+    // MARK: - Constructor
+    init(with coordinator: IntroductionCoordinator) {
+        self.coordinator     = coordinator
+    }
+    
+    // MARK: - Navigation
+    func showFeed() {
+        coordinator.showFeed()
+    }
 }

@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class BaseCoordinator: Coordinator {
+    
     // MARK: - Properties
     let feedsController: FeedsController
     let router: Router

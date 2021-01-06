@@ -10,19 +10,11 @@ import XMLParsing
 
 class FeedsController {
     
-    private var feed: Feed?
+    // MARK: - Data
+    var feed: Feed?
     private let backendProvider = MainBackendProvider()
     
-    init() {
-        fetchFeed { (feed) in
-            print("coucou")
-        } failure: {
-            print("failed")
-        }
-    }
-    
     // MARK: - Network
-    
     func fetchFeed(completion: @escaping (_ result: Feed) -> Void, failure: @escaping () -> Void) {
         backendProvider.request(.getFeed) { (response) in
             switch response {

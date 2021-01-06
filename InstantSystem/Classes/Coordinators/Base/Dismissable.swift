@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol Dismissable where Self: UIViewController {
+    
     // MARK: - Callbacks
     /// Block called once controller is dismissed
     var onDismissed: SimpleCompletionBlock? {get set}

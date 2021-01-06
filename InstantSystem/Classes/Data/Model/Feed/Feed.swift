@@ -11,7 +11,7 @@ struct Feed: Codable {
     
     let uid: String
     let title: String
-    let post: [Post]?
+    let posts: [Post]
     let icon: String
     let logo: String
     let subtitle: String
@@ -19,6 +19,6 @@ struct Feed: Codable {
     enum CodingKeys: String, CodingKey {
         case title, icon, logo, subtitle
         case uid = "id"
-        case post = "entry"
+        case posts = "entry"
     }
 }

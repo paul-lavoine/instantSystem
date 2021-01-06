@@ -43,6 +43,9 @@
                         <constraint firstAttribute="height" constant="50" id="Yeq-fk-H0L"/>
                     </constraints>
                     <state key="normal" title="COUCOU"/>
+                    <connections>
+                        <action selector="displayFeedAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="THe-5E-Spj"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
