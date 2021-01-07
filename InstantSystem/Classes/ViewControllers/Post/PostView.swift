@@ -11,7 +11,7 @@ import SDWebImage
 class PostView: UIView, UITextViewDelegate {
     
     // MARK: - Properties
-    private var imageRatio: CGFloat = 0
+    private var imageRatio: CGFloat = 1
     
     // MARK: - Outlets
     @IBOutlet private (set) weak var postImageView: UIImageView!
