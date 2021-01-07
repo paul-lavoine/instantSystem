@@ -16,7 +16,7 @@ PODS:
   - XMLParsing (0.0.3)
 
 DEPENDENCIES:
-  - BonMot
+  - BonMot (~> 5.6.0)
   - lottie-ios (~> 3.1.9)
   - Moya (~> 14.0.0)
   - R.swift (~> 5.3.1)
@@ -55,6 +55,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   XMLParsing: 085edb6fa22c71d6b53a79299f990a91e7414d19
 
-PODFILE CHECKSUM: 5e8468b0f0fe19bd0633a057ef661a382ae02011
+PODFILE CHECKSUM: 3646d41d112cdf0d825055237a071ecdffec3d0c
 
 COCOAPODS: 1.10.0
