@@ -7,11 +7,16 @@
 
 import UIKit
 import SDWebImage
+import BonMot
 
 class PostView: UIView, UITextViewDelegate {
     
     // MARK: - Properties
     private var imageRatio: CGFloat = 1
+    private let descriptionStyle = StringStyle(
+        .color(.darkGray),
+        .xmlRules([])
+    )
     
     // MARK: - Outlets
     @IBOutlet private (set) weak var postImageView: UIImageView!
@@ -34,13 +39,13 @@ class PostView: UIView, UITextViewDelegate {
         heightImageConstraint.constant = imageRatio * postImageView.frame.width
     }
     
-    // MARK: - Configuration
+    // MARK: - Configuration UI
     func configure(with post: Post) {
         /// title
         titleLabel.text = post.title
         
         /// description
-        descriptionLabel.text = post.content
+        descriptionLabel.attributedText = post.content.styled(with: descriptionStyle)
         
         /// image
         imageRatio = CGFloat(post.image.height / post.image.width)

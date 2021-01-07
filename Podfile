@@ -19,5 +19,6 @@ target 'InstantSystem' do
 
    # Tools
     pod 'R.swift', '~> 5.3.1'
+    pod 'BonMot', '~> 5.6.0'
 
 end
