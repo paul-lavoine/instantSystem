@@ -32,7 +32,7 @@ class IntroductionView: UIView {
         startAnimation()
     }
     
-    // MARK: - UI Components
+    // MARK: - Configure UI
     func configureStartButton() {
         startButton.setTitle(R.string.localizable.introductionViewControllerContinueButton(), for: .normal)
         startButton.setTitleColor(.white, for: .normal)
@@ -42,18 +42,6 @@ class IntroductionView: UIView {
         
         let layer = gradient(view: startButton)
         startButton.layer.insertSublayer(layer, at: 0)
-    }
-    
-    func gradient(view: UIView) -> CAGradientLayer {
-        let layer          = CAGradientLayer()
-        layer.frame        = view.bounds
-        layer.colors       = [UIColor(red: 213.0/255.0, green: 55.0/255.0, blue: 113.0/255.0, alpha: 1).cgColor,
-                              UIColor(red: 68.0/255.0, green: 66.0/255.0, blue: 121.0/255.0, alpha: 1).cgColor]
-        layer.startPoint   = CGPoint(x: 0, y: 1)
-        layer.endPoint     = CGPoint(x: 0, y: 0.1)
-        layer.cornerRadius = view.frame.height / 2
-        
-        return layer
     }
     
     fileprivate func configureAnimation() {
@@ -73,8 +61,21 @@ class IntroductionView: UIView {
         }
     }
     
+    // MARK: - Utils
     func startAnimation() {
         animationView.play()
+    }
+    
+    func gradient(view: UIView) -> CAGradientLayer {
+        let layer          = CAGradientLayer()
+        layer.frame        = view.bounds
+        layer.colors       = [UIColor(red: 213.0/255.0, green: 55.0/255.0, blue: 113.0/255.0, alpha: 1).cgColor,
+                              UIColor(red: 68.0/255.0, green: 66.0/255.0, blue: 121.0/255.0, alpha: 1).cgColor]
+        layer.startPoint   = CGPoint(x: 0, y: 1)
+        layer.endPoint     = CGPoint(x: 0, y: 0.1)
+        layer.cornerRadius = view.frame.height / 2
+        
+        return layer
     }
     
     // MARK: - Actions
