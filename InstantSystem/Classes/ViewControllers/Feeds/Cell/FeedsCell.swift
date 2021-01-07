@@ -20,7 +20,7 @@ class FeedsCell: UITableViewCell {
         super.awakeFromNib()
         
         let layer = gradient(frame: gradientView.bounds)
-        gradientView.layer.insertSublayer(layer, at:0)
+        gradientView.layer.addSublayer(layer)
     }
     
     override func prepareForReuse() {

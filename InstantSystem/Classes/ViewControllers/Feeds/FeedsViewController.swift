@@ -11,10 +11,12 @@ class FeedsViewController: UIViewController {
     
     // MARK: - Properties
     let feedsViewModel: FeedsViewModel
+    let titleFeed: String?
     
     // MARK: - Constructors
     required init(with coordinator: FeedsCoordinator, feedsController: FeedsController) {
         self.feedsViewModel = FeedsViewModel(with: coordinator, feedsController: feedsController)
+        titleFeed           = feedsController.feed?.title
         
         super.init(nibName: R.nib.feedsViewController.name, bundle: R.nib.feedsViewController.bundle)
     }
@@ -34,6 +36,8 @@ class FeedsViewController: UIViewController {
         view.displayPostAt = { [weak self] indexPath in
             self?.feedsViewModel.didSelectItem(at: indexPath)
         }
+        
+        title = titleFeed
     }
 
     // MARK: - Utils

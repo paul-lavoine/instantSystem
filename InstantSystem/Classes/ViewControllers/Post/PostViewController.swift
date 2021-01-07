@@ -11,7 +11,7 @@ import Rswift
 class PostViewController: UIViewController {
     
     // MARK: - Constructors
-    required init(with feedsController: FeedsController) {
+    required init(with feedsCoordinator: FeedsCoordinator, post: Post) {
         super.init(nibName: R.nib.postViewController.name, bundle: R.nib.postViewController.bundle)
     }
     

@@ -9,7 +9,7 @@ import Lottie
 
 /// List all animations available in application for Lottie
 enum Animations: String {
-    case loader, search, logo
+    case logo
 
     // MARK: - Utils
     /// Load associated animation
@@ -22,6 +22,6 @@ enum Animations: String {
     }
 
     func loopMode() -> LottieLoopMode {
-        self == .search ? LottieLoopMode.playOnce : LottieLoopMode.loop
+        return LottieLoopMode.loop
     }
 }

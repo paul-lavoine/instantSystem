@@ -25,6 +25,10 @@ class FeedsCoordinator: BaseCoordinator {
 
     // MARK: - Navigation
     func show(_ post: Post) {
-       
+        let post = PostViewController(with: self, post: post)
+
+        router.push(post) {
+            self.executeCompletion()
+        }
     }
 }

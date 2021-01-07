@@ -11,7 +11,6 @@ class IntroductionCoordinator: BaseCoordinator {
 
     // MARK: - Constructors
     init(with feedsController: FeedsController, router: Router) {
-
         super.init(feedsController: feedsController, router: router)
     }
 

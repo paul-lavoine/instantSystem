@@ -130,26 +130,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 4 files.
+  /// This `R.file` struct is generated, and contains static references to 2 files.
   struct file {
     /// Resource file `configuration.json`.
     static let configurationJson = Rswift.FileResource(bundle: R.hostingBundle, name: "configuration", pathExtension: "json")
-    /// Resource file `loader.json`.
-    static let loaderJson = Rswift.FileResource(bundle: R.hostingBundle, name: "loader", pathExtension: "json")
     /// Resource file `logo.json`.
     static let logoJson = Rswift.FileResource(bundle: R.hostingBundle, name: "logo", pathExtension: "json")
-    /// Resource file `search.json`.
-    static let searchJson = Rswift.FileResource(bundle: R.hostingBundle, name: "search", pathExtension: "json")
 
     /// `bundle.url(forResource: "configuration", withExtension: "json")`
     static func configurationJson(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.configurationJson
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-
-    /// `bundle.url(forResource: "loader", withExtension: "json")`
-    static func loaderJson(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.loaderJson
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -159,11 +149,20 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
 
-    /// `bundle.url(forResource: "search", withExtension: "json")`
-    static func searchJson(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.searchJson
-      return fileResource.bundle.url(forResource: fileResource)
+    fileprivate init() {}
+  }
+
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `logo_is`.
+    static let logo_is = Rswift.ImageResource(bundle: R.hostingBundle, name: "logo_is")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "logo_is", bundle: ..., traitCollection: ...)`
+    static func logo_is(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.logo_is, compatibleWith: traitCollection)
     }
+    #endif
 
     fileprivate init() {}
   }
