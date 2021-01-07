@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A80AED135F502D3A32453237 /* Pods_InstantSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */; };
 		A850EDEB25A4A2060001A433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EDEA25A4A2060001A433 /* AppDelegate.swift */; };
 		A850EDED25A4A2060001A433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EDEC25A4A2060001A433 /* SceneDelegate.swift */; };
 		A850EDEF25A4A2060001A433 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A850EDEE25A4A2060001A433 /* IntroductionViewController.swift */; };
@@ -50,6 +49,7 @@
 		A8FCFF4B25A5DB0A00B366F6 /* UITableView+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF4A25A5DB0A00B366F6 /* UITableView+Component.swift */; };
 		A8FCFF5425A689A900B366F6 /* logo.json in Resources */ = {isa = PBXBuildFile; fileRef = A8FCFF5325A689A900B366F6 /* logo.json */; };
 		A8FCFF5725A738F900B366F6 /* Post+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF5625A738F900B366F6 /* Post+Utils.swift */; };
+		D92B12F789E282D9A9D656B6 /* Pods_InstantSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8953597BDD43A5100A122EC /* Pods_InstantSystem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,7 +99,7 @@
 		A8FCFF4A25A5DB0A00B366F6 /* UITableView+Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Component.swift"; sourceTree = "<group>"; };
 		A8FCFF5325A689A900B366F6 /* logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
 		A8FCFF5625A738F900B366F6 /* Post+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Utils.swift"; sourceTree = "<group>"; };
-		BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8953597BDD43A5100A122EC /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80AED135F502D3A32453237 /* Pods_InstantSystem.framework in Frameworks */,
+				D92B12F789E282D9A9D656B6 /* Pods_InstantSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +393,7 @@
 		CCC8E4962176C5188D5FB94B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */,
+				D8953597BDD43A5100A122EC /* Pods_InstantSystem.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 				A850EDE325A4A2060001A433 /* Sources */,
 				A850EDE425A4A2060001A433 /* Frameworks */,
 				A850EDE525A4A2060001A433 /* Resources */,
-				CB4B9A03182A041B3AD6BD31 /* [CP] Embed Pods Frameworks */,
+				E8F589A9153DAF58EE05B578 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -496,28 +496,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/InstantSystem/Classes/R.generated.swift,
+				"$SRCROOT/InstantSystem/Classes/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/InstantSystem/Classes/R.generated.swift\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB4B9A03182A041B3AD6BD31 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D985616081954AE889807988 /* [CP] Check Pods Manifest.lock */ = {
@@ -540,6 +523,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F589A9153DAF58EE05B578 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstantSystem/Pods-InstantSystem-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -721,6 +721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM4F765E5B;
 				INFOPLIST_FILE = InstantSystem/Resources/Info.plist;
@@ -741,6 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DM4F765E5B;
 				INFOPLIST_FILE = InstantSystem/Resources/Info.plist;
