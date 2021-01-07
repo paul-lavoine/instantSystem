@@ -15,6 +15,7 @@ class IntroductionViewModel {
     init(with coordinator: IntroductionCoordinator, feedsController: FeedsController) {
         self.coordinator = coordinator
         
+        /// Fetch data
         feedsController.fetchFeed { [weak self] (_) in
             self?.bindIntroductionViewModelToController()
         } failure: {

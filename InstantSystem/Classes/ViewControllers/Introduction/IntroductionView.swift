@@ -82,8 +82,10 @@ class IntroductionView: UIView {
     
     // MARK: - Notification
     func dataDidLoad() {
+        /// Stop indicator
         networkIndicator.stopAnimating()
         
+        /// Update button layout
         startButton.setTitle(R.string.localizable.introductionViewControllerContinueButton(), for: .normal)
         startButton.isUserInteractionEnabled = true
     }
