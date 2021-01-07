@@ -35,6 +35,12 @@ class IntroductionViewController: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        introductionView().startAnimation()
+    }
+    
     // MARK: - Utils
     private func introductionView() -> IntroductionView {
         guard let introductionView = view as? IntroductionView else {

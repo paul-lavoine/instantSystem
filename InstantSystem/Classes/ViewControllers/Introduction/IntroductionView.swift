@@ -28,6 +28,7 @@ class IntroductionView: UIView {
         logoTitleImage.image = R.image.logo_is()
         configureStartButton()
         configureAnimation()
+        startAnimation()
     }
     
     // MARK: - UI Components
@@ -55,7 +56,6 @@ class IntroductionView: UIView {
     }
     
     fileprivate func configureAnimation() {
-        
         /// Configure animation properties
         let animation: Animations = .logo
         animationView             = AnimationView()
@@ -70,8 +70,9 @@ class IntroductionView: UIView {
         animationView.snp.makeConstraints { (make) in
             make.edges.equalTo(supportView)
         }
-        
-        /// Start animation
+    }
+    
+    func startAnimation() {
         animationView.play()
     }
     
