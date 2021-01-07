@@ -10,6 +10,6 @@ import Foundation
 struct Image: Codable {
     let type: String
     let height: Int
-    let width: String
+    let width: Int
     let url: String
 }

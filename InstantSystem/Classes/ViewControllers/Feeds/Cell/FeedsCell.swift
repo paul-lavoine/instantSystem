@@ -36,9 +36,7 @@ class FeedsCell: UITableViewCell {
         titleLabel.text = post.title
         
         /// image
-        if let url = URL(string: post.image.url) {
-            postImageView.sd_setImage(with: url, completed: nil)
-        }
+        postImageView.sd_setImage(with: post.imageUrl(), completed: nil)
     }
     
     // MARK: - UI Components

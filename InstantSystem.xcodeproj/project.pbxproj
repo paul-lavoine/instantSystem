@@ -51,6 +51,7 @@
 		A8FCFF4725A5DA6800B366F6 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FCFF4625A5DA6800B366F6 /* FeedsCell.xib */; };
 		A8FCFF4B25A5DB0A00B366F6 /* UITableView+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF4A25A5DB0A00B366F6 /* UITableView+Component.swift */; };
 		A8FCFF5425A689A900B366F6 /* logo.json in Resources */ = {isa = PBXBuildFile; fileRef = A8FCFF5325A689A900B366F6 /* logo.json */; };
+		A8FCFF5725A738F900B366F6 /* Post+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF5625A738F900B366F6 /* Post+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		A8FCFF4625A5DA6800B366F6 /* FeedsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsCell.xib; sourceTree = "<group>"; };
 		A8FCFF4A25A5DB0A00B366F6 /* UITableView+Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Component.swift"; sourceTree = "<group>"; };
 		A8FCFF5325A689A900B366F6 /* logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
+		A8FCFF5625A738F900B366F6 /* Post+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Utils.swift"; sourceTree = "<group>"; };
 		BC59DA133B91A93E467DB7D4 /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -325,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				A850EE7B25A4FD370001A433 /* Post.swift */,
+				A8FCFF5625A738F900B366F6 /* Post+Utils.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				A850EE3425A4AD960001A433 /* ConfigurationManager.swift in Sources */,
 				A850EE4825A4AF970001A433 /* Dismissable.swift in Sources */,
 				A8FCFF2125A5C13500B366F6 /* Link.swift in Sources */,
+				A8FCFF5725A738F900B366F6 /* Post+Utils.swift in Sources */,
 				A879732825A50B7900ACD951 /* R.generated.swift in Sources */,
 				A879734F25A50DC400ACD951 /* FeedsViewModel.swift in Sources */,
 				A850EDEF25A4A2060001A433 /* IntroductionViewController.swift in Sources */,

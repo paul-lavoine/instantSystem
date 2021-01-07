@@ -12,7 +12,7 @@ class IntroductionViewModel {
     
     // MARK: - Constructor
     init(with coordinator: IntroductionCoordinator) {
-        self.coordinator     = coordinator
+        self.coordinator = coordinator
     }
     
     // MARK: - Navigation
