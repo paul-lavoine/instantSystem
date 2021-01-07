@@ -15,6 +15,7 @@ class IntroductionView: UIView {
     @IBOutlet private (set) weak var supportView: UIView!
     @IBOutlet private (set) weak var startButton: UIButton!
     @IBOutlet private (set) weak var logoTitleImage: UIImageView!
+    @IBOutlet private (set) weak var networkIndicator: UIActivityIndicatorView!
     
     // MARK: UI Components
     private var animationView: AnimationView!
@@ -34,11 +35,12 @@ class IntroductionView: UIView {
     
     // MARK: - Configure UI
     func configureStartButton() {
-        startButton.setTitle(R.string.localizable.introductionViewControllerContinueButton(), for: .normal)
+        startButton.setTitle("", for: .normal)
         startButton.setTitleColor(.white, for: .normal)
-        startButton.layer.cornerRadius = startButton.frame.height / 2
-        startButton.layer.borderWidth  = 1.0
-        startButton.layer.borderColor  = UIColor.black.cgColor
+        startButton.layer.cornerRadius       = startButton.frame.height / 2
+        startButton.layer.borderWidth        = 1.0
+        startButton.layer.borderColor        = UIColor.black.cgColor
+        startButton.isUserInteractionEnabled = false
         
         let layer = gradient(view: startButton)
         startButton.layer.insertSublayer(layer, at: 0)
@@ -76,6 +78,14 @@ class IntroductionView: UIView {
         layer.cornerRadius = view.frame.height / 2
         
         return layer
+    }
+    
+    // MARK: - Notification
+    func dataDidLoad() {
+        networkIndicator.stopAnimating()
+        
+        startButton.setTitle(R.string.localizable.introductionViewControllerContinueButton(), for: .normal)
+        startButton.isUserInteractionEnabled = true
     }
     
     // MARK: - Actions

@@ -29,12 +29,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         navigationController.navigationBar.prefersLargeTitles = true
 
-        // Init data
-        let feedsController  = FeedsController()
-        feedsController.fetchFeed { (_) in } failure: {}
-        let router           = Router(navigationController: navigationController)
-        
-        applicationCoordinator = ApplicationCoordinator(window: window, router: router, feedsController: feedsController)
+        // Init
+        let router             = Router(navigationController: navigationController)
+        applicationCoordinator = ApplicationCoordinator(window: window, router: router, feedsController: FeedsController())
         applicationCoordinator.start()
 
         window.rootViewController = router.rootViewController()

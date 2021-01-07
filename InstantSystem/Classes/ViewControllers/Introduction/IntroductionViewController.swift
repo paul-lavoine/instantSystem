@@ -16,7 +16,7 @@ class IntroductionViewController: UIViewController {
     // MARK: - Constructors
     required init(with coordinator: IntroductionCoordinator, feedsController: FeedsController) {
         self.feedsController       = feedsController
-        self.introductionViewModel = IntroductionViewModel(with: coordinator)
+        self.introductionViewModel = IntroductionViewModel(with: coordinator, feedsController: feedsController)
         
         super.init(nibName: R.nib.introductionViewController.name, bundle: R.nib.introductionViewController.bundle)
     }
@@ -32,6 +32,10 @@ class IntroductionViewController: UIViewController {
         let view = introductionView()
         view.displayFeedRequested = { [weak self] in
             self?.introductionViewModel.showFeed()
+        }
+        
+        self.introductionViewModel.bindIntroductionViewModelToController = {
+            view.dataDidLoad()
         }
     }
     

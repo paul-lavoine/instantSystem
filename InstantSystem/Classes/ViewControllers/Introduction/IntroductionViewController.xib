@@ -33,11 +33,14 @@
                         <constraint firstAttribute="width" constant="150" id="ieo-45-dJe"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                    <state key="normal" title="COUCOU"/>
                     <connections>
                         <action selector="displayFeedAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="THe-5E-Spj"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="mmJ-Q6-Cwp">
+                    <rect key="frame" x="197" y="727" width="20" height="20"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="XVG-Ua-lzs">
                     <rect key="frame" x="0.0" y="338" width="414" height="100"/>
                 </imageView>
@@ -51,11 +54,14 @@
                 <constraint firstItem="6CE-Lb-MMl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="HM0-yR-rqk"/>
                 <constraint firstItem="XVG-Ua-lzs" firstAttribute="centerX" secondItem="ubm-c2-f36" secondAttribute="centerX" id="Rdv-Eu-i9V"/>
                 <constraint firstItem="XVG-Ua-lzs" firstAttribute="top" secondItem="ubm-c2-f36" secondAttribute="bottom" constant="20" id="WOQ-Q6-sUc"/>
+                <constraint firstItem="mmJ-Q6-Cwp" firstAttribute="centerY" secondItem="6CE-Lb-MMl" secondAttribute="centerY" id="XdI-Qb-AYY"/>
                 <constraint firstItem="ubm-c2-f36" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="70" id="ZmT-TI-RDL"/>
+                <constraint firstItem="mmJ-Q6-Cwp" firstAttribute="centerX" secondItem="6CE-Lb-MMl" secondAttribute="centerX" id="c5u-e9-cZP"/>
                 <constraint firstItem="ubm-c2-f36" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lNE-BV-Mpi"/>
             </constraints>
             <connections>
                 <outlet property="logoTitleImage" destination="XVG-Ua-lzs" id="XK6-gH-eJc"/>
+                <outlet property="networkIndicator" destination="mmJ-Q6-Cwp" id="sg4-Sz-aum"/>
                 <outlet property="startButton" destination="6CE-Lb-MMl" id="MGf-yx-qqy"/>
                 <outlet property="supportView" destination="ubm-c2-f36" id="6Uo-5M-j25"/>
             </connections>
