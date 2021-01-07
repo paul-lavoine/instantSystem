@@ -245,8 +245,8 @@ struct R: Rswift.Validatable {
       return R.nib.feedsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedsCell
     }
 
-    static func feedsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedsView? {
-      return R.nib.feedsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedsView
+    static func feedsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.feedsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func introductionViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> IntroductionView? {
@@ -323,8 +323,8 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "FeedsViewController"
 
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedsView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedsView
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
 
       fileprivate init() {}

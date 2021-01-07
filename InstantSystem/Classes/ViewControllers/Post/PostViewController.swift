@@ -11,11 +11,11 @@ import Rswift
 class PostViewController: UIViewController {
     
     // MARK: - Properties
-    private var viewModel: PostViewModel
+    private var post: Post
     
     // MARK: - Constructors
     required init(with feedsCoordinator: FeedsCoordinator, post: Post) {
-        self.viewModel = PostViewModel(with: feedsCoordinator, post: post)
+        self.post = post
         
         super.init(nibName: R.nib.postViewController.name, bundle: R.nib.postViewController.bundle)
         
@@ -30,7 +30,7 @@ class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        postView().configure(with: viewModel.post)
+        postView().configure(with: post)
     }
     
     // MARK: - Utils

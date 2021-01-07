@@ -10,6 +10,7 @@ import Lottie
 import SnapKit
 
 class IntroductionView: UIView {
+    
     // MARK: - Outlets
     @IBOutlet private (set) weak var supportView: UIView!
     @IBOutlet private (set) weak var startButton: UIButton!

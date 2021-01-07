@@ -9,6 +9,9 @@ import UIKit
 
 class FeedsViewController: UIViewController {
     
+    // MARK: Outlets
+    @IBOutlet private (set) weak var tableView: UITableView!
+    
     // MARK: - Properties
     let feedsViewModel: FeedsViewModel
     let titleFeed: String?
@@ -28,24 +31,19 @@ class FeedsViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let view = feedsView()
-        view.tableView.register(FeedsCell.nib(), forCellReuseIdentifier: FeedsCell.reuseIdentifier())
-        view.tableView.dataSource = feedsViewModel
-        view.tableView.delegate = view
-        view.displayPostAt = { [weak self] indexPath in
-            self?.feedsViewModel.didSelectItem(at: indexPath)
-        }
-        
+
+        tableView.register(FeedsCell.nib(), forCellReuseIdentifier: FeedsCell.reuseIdentifier())
+        tableView.dataSource = feedsViewModel
+
         title = titleFeed
     }
+}
 
-    // MARK: - Utils
-    private func feedsView() -> FeedsView {
-        guard let feedsView = view as? FeedsView else {
-            fatalError("<\(type(of: self.view))> found instead of expected FeedsView")
-        }
-
-        return feedsView
+extension FeedsViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        feedsViewModel.didSelectItem(at: indexPath)
     }
 }

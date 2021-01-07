@@ -11,11 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedsViewController" customModule="InstantSystem" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="9Vh-2z-D8h"/>
+                <outlet property="tableView" destination="Xgr-T3-dim" id="pZa-du-41y"/>
+                <outlet property="view" destination="iN0-l3-epB" id="QZF-dt-iU7"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedsView" customModule="InstantSystem" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -36,9 +37,6 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xgr-T3-dim" secondAttribute="bottom" id="Y7e-vZ-Dxs"/>
                 <constraint firstItem="Xgr-T3-dim" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xbv-PR-cdO"/>
             </constraints>
-            <connections>
-                <outlet property="tableView" destination="Xgr-T3-dim" id="EzZ-yb-gDJ"/>
-            </connections>
             <point key="canvasLocation" x="138" y="153"/>
         </view>
     </objects>
