@@ -3,16 +3,18 @@ Creadition date:
 06/01/2021
 
 
-This project is based on MVVM pattern
+This project is based on MVVM+Coordinator pattern
 
 
 ## Tools version
 - OSx Catalina (10.15.7)
 - Xcode 12.3
+- Cocoapods 1.8.4
 - After effect 2020
 
-## Language
-- iOS
+## Languages
+- iPhone only
+- iOS 13+
 
 ## Target devices
 - Smartphone only
