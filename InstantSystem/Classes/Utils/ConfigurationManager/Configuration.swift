@@ -5,13 +5,17 @@
 //  Created by Paul_Lavoine on 05/01/2021.
 //
 
-import Foundation
 import Alamofire
 
 // MARK: - Configuration
 struct Configuration: Codable {
-    let server: Server
     
+    // MARK: - Properties
+    let server: Server
+}
+
+extension Configuration {
+
     func baseURL() -> URL {
         return URL(string: server.scheme + "://" + server.host)!
     }

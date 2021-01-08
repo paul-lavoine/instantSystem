@@ -13,7 +13,7 @@ class PostView: UIView, UITextViewDelegate {
     
     // MARK: - Properties
     private var imageRatio: CGFloat = 1
-    private let descriptionStyle = StringStyle(
+    private static let descriptionStyle = StringStyle(
         .color(.darkGray),
         .xmlRules([])
     )
@@ -45,7 +45,7 @@ class PostView: UIView, UITextViewDelegate {
         titleLabel.text = post.title
         
         // description
-        descriptionLabel.attributedText = post.content.styled(with: descriptionStyle)
+        descriptionLabel.attributedText = post.content.styled(with: PostView.descriptionStyle)
         
         // image
         imageRatio = CGFloat(post.image.height / post.image.width)

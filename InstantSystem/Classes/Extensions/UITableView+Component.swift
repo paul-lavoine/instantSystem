@@ -10,6 +10,7 @@ import UIKit
 /// Base class for all cells in application
 /// Will expose utis methods to automatically retrieve reuseId and nib file
 extension UITableViewCell {
+    
     // MARK: - Utils
     private class var simpleClassName: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!

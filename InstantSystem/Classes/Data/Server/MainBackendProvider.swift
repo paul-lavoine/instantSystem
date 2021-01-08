@@ -5,7 +5,6 @@
 //  Created by Paul_Lavoine on 06/01/2021.
 //
 
-import Foundation
 import Moya
 
 open class MainBackendProvider: MoyaProvider<MainBackendAPI> {

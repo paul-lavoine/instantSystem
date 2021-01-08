@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Rswift
 
 class FeedsViewController: UIViewController {
     
@@ -31,7 +32,7 @@ class FeedsViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.register(FeedsCell.nib(), forCellReuseIdentifier: FeedsCell.reuseIdentifier())
         tableView.dataSource = feedsViewModel
 

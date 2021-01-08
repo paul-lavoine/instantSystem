@@ -9,6 +9,7 @@ import Foundation
 
 extension Post {
     
+    // MARK: - Utils
     func imageUrl() -> URL? {
         if let imageUrl = URL(string: image.url) {
             return imageUrl
