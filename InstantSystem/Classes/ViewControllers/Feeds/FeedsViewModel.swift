@@ -24,6 +24,7 @@ class FeedsViewModel {
         }
     }
     
+    // MARK: - Tools
     func post(at index: Int) -> Post? {
         return feedsController.feed?.posts[index]
     }
