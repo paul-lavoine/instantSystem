@@ -47,14 +47,14 @@ class IntroductionView: UIView {
     }
     
     fileprivate func configureAnimation() {
-        /// Configure animation properties
+        // Configure animation properties
         let animation: Animations = .logo
         animationView             = AnimationView()
         animationView.contentMode = .scaleAspectFit
         animationView.animation   = animation.loadAnimation()
         animationView.loopMode    = animation.loopMode()
         
-        /// Configure animation layout
+        // Configure animation layout
         animationView.frame = supportView.frame
         supportView.addSubview(animationView)
         
@@ -82,10 +82,10 @@ class IntroductionView: UIView {
     
     // MARK: - Notification
     func dataDidLoad() {
-        /// Stop indicator
+        // Stop indicator
         networkIndicator.stopAnimating()
         
-        /// Update button layout
+        // Update button layout
         startButton.setTitle(R.string.localizable.introductionViewControllerContinueButton(), for: .normal)
         startButton.isUserInteractionEnabled = true
     }

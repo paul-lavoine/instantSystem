@@ -32,10 +32,10 @@ class FeedsCell: UITableViewCell {
     
     // MARK: - Configuration
     func configure(with post: Post) {
-        /// title
+        // title
         titleLabel.text = post.title
         
-        /// image
+        // image
         postImageView.sd_setImage(with: post.imageUrl(), completed: nil)
     }
     

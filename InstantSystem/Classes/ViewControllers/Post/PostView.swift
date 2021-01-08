@@ -32,26 +32,26 @@ class PostView: UIView, UITextViewDelegate {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        /// Refresh layout
+        // Refresh layout
         postImageView.layoutIfNeeded()
         
-        /// Compute height
+        // Compute height
         heightImageConstraint.constant = imageRatio * postImageView.frame.width
     }
     
     // MARK: - Configuration UI
     func configure(with post: Post) {
-        /// title
+        // title
         titleLabel.text = post.title
         
-        /// description
+        // description
         descriptionLabel.attributedText = post.content.styled(with: descriptionStyle)
         
-        /// image
+        // image
         imageRatio = CGFloat(post.image.height / post.image.width)
         postImageView.sd_setImage(with: post.imageUrl(), completed: nil)
         
-        /// link
+        // link
         let url = post.link.url
         let attributedString = NSMutableAttributedString(string: url)
         attributedString.addAttribute(.link, value: url, range: NSRange(location: 0, length: url.count))
