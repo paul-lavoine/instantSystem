@@ -46,7 +46,6 @@
 		A8FCFF2425A5C13C00B366F6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF2325A5C13C00B366F6 /* Image.swift */; };
 		A8FCFF4025A5DA5000B366F6 /* FeedsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF3F25A5DA5000B366F6 /* FeedsCell.swift */; };
 		A8FCFF4725A5DA6800B366F6 /* FeedsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FCFF4625A5DA6800B366F6 /* FeedsCell.xib */; };
-		A8FCFF4B25A5DB0A00B366F6 /* UITableView+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF4A25A5DB0A00B366F6 /* UITableView+Component.swift */; };
 		A8FCFF5425A689A900B366F6 /* logo.json in Resources */ = {isa = PBXBuildFile; fileRef = A8FCFF5325A689A900B366F6 /* logo.json */; };
 		A8FCFF5725A738F900B366F6 /* Post+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FCFF5625A738F900B366F6 /* Post+Utils.swift */; };
 		D92B12F789E282D9A9D656B6 /* Pods_InstantSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8953597BDD43A5100A122EC /* Pods_InstantSystem.framework */; };
@@ -96,7 +95,6 @@
 		A8FCFF2325A5C13C00B366F6 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		A8FCFF3F25A5DA5000B366F6 /* FeedsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsCell.swift; sourceTree = "<group>"; };
 		A8FCFF4625A5DA6800B366F6 /* FeedsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsCell.xib; sourceTree = "<group>"; };
-		A8FCFF4A25A5DB0A00B366F6 /* UITableView+Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Component.swift"; sourceTree = "<group>"; };
 		A8FCFF5325A689A900B366F6 /* logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
 		A8FCFF5625A738F900B366F6 /* Post+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+Utils.swift"; sourceTree = "<group>"; };
 		D8953597BDD43A5100A122EC /* Pods_InstantSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstantSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +160,6 @@
 				A850EDEC25A4A2060001A433 /* SceneDelegate.swift */,
 				A850EE0A25A4A2A00001A433 /* Coordinators */,
 				A850EE0C25A4A2C90001A433 /* Data */,
-				A850EE0D25A4A2FB0001A433 /* Extensions */,
 				A850EE0E25A4A3010001A433 /* Utils */,
 				A850EE0425A4A25D0001A433 /* ViewControllers */,
 			);
@@ -220,14 +217,6 @@
 				A850EE0525A4A2670001A433 /* Server */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		A850EE0D25A4A2FB0001A433 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A8FCFF4A25A5DB0A00B366F6 /* UITableView+Component.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A850EE0E25A4A3010001A433 /* Utils */ = {
@@ -496,7 +485,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/InstantSystem/Classes/R.generated.swift",
+				$SRCROOT/InstantSystem/Classes/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,7 +565,6 @@
 				A850EE2325A4AAC00001A433 /* Animations.swift in Sources */,
 				A8F0431925A5A78400A584BD /* MainBackendAPI.swift in Sources */,
 				A8FCFF1E25A5C12E00B366F6 /* Author.swift in Sources */,
-				A8FCFF4B25A5DB0A00B366F6 /* UITableView+Component.swift in Sources */,
 				A850EE4A25A4AF970001A433 /* Presentable.swift in Sources */,
 				A879734825A50D6F00ACD951 /* IntroductionView.swift in Sources */,
 				A850EE7125A4FC200001A433 /* IntroductionCoordinator.swift in Sources */,

@@ -33,8 +33,8 @@ class FeedsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(FeedsCell.nib(), forCellReuseIdentifier: FeedsCell.reuseIdentifier())
-
+        tableView.register(R.nib.feedsCell)
+        
         title = titleFeed
     }
 }
@@ -46,10 +46,10 @@ extension FeedsViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedsCell.reuseIdentifier(), for: indexPath) as? FeedsCell else {
-            fatalError("Cannot dequeue cell with <\(FeedsCell.reuseIdentifier())> identifier")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedsCell, for: indexPath) else {
+            fatalError("Cannot dequeue cell with <\(R.reuseIdentifier.feedsCell)> identifier")
         }
-
+        
         if let post: Post = feedsViewModel.post(at: indexPath.row) {
             cell.configure(with: post)
         }

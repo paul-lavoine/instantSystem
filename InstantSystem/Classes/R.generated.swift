@@ -260,6 +260,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `FeedsCell`.
+    static let feedsCell: Rswift.ReuseIdentifier<FeedsCell> = Rswift.ReuseIdentifier(identifier: "FeedsCell")
+
+    fileprivate init() {}
+  }
+
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
     /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
@@ -308,8 +316,11 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
-    struct _FeedsCell: Rswift.NibResourceType {
+    struct _FeedsCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = FeedsCell
+
       let bundle = R.hostingBundle
+      let identifier = "FeedsCell"
       let name = "FeedsCell"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedsCell? {
