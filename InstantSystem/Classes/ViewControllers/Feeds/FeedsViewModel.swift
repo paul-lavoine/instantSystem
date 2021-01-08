@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeedsViewModel: NSObject, UITableViewDataSource {
+class FeedsViewModel: NSObject {
     
     // MARK: - Properties
     private var coordinator: FeedsCoordinator
@@ -25,12 +25,14 @@ class FeedsViewModel: NSObject, UITableViewDataSource {
             coordinator.show(post)
         }
     }
+}
+
+extension FeedsViewModel: UITableViewDataSource {
     
-    // MARK: - UITableViewDataSource methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return feedsController.feed?.posts.count ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedsCell.reuseIdentifier(), for: indexPath) as? FeedsCell else {
             fatalError("Cannot dequeue cell with <\(FeedsCell.reuseIdentifier())> identifier")
