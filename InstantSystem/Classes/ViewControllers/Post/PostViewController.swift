@@ -14,7 +14,7 @@ class PostViewController: UIViewController {
     private var post: Post
     
     // MARK: - Constructors
-    required init(with feedsCoordinator: FeedsCoordinator, post: Post) {
+    required init(with feedCoordinator: FeedCoordinator, post: Post) {
         self.post = post
         
         super.init(nibName: R.nib.postViewController.name, bundle: R.nib.postViewController.bundle)

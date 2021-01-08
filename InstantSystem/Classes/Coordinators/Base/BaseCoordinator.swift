@@ -10,7 +10,7 @@ import UIKit
 class BaseCoordinator: Coordinator {
     
     // MARK: - Properties
-    let feedsController: FeedsController
+    let feedController: FeedController
     let router: Router
     let rootViewController: UIViewController
     private var uid = UUID()
@@ -19,8 +19,8 @@ class BaseCoordinator: Coordinator {
     var onComplete: SimpleCompletionBlock? // Callback to execute on coordinator completion
 
     // MARK: - Constructors
-    init(feedsController: FeedsController, router: Router) {
-        self.feedsController = feedsController
+    init(feedController: FeedController, router: Router) {
+        self.feedController = feedController
         self.router = router
         self.rootViewController = router.rootViewController()
     }

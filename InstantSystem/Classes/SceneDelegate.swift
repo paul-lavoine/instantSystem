@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Init
         let router             = Router(navigationController: navigationController)
-        applicationCoordinator = ApplicationCoordinator(window: window, router: router, feedsController: FeedsController())
+        applicationCoordinator = ApplicationCoordinator(window: window, router: router, feedController: FeedController())
         applicationCoordinator.start()
 
         window.rootViewController = router.rootViewController()

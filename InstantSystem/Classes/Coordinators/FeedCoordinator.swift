@@ -1,22 +1,22 @@
 //
-//  FeedsCoordinator.swift
+//  FeedCoordinator.swift
 //  InstantSystem
 //
 //  Created by Paul_Lavoine on 05/01/2021.
 //
 
-class FeedsCoordinator: BaseCoordinator {
+class FeedCoordinator: BaseCoordinator {
     
     // MARK: - Constructors
-    init(with feedsController: FeedsController, router: Router) {
-        super.init(feedsController: feedsController, router: router)
+    init(with feedController: FeedController, router: Router) {
+        super.init(feedController: feedController, router: router)
     }
 
     // MARK: - Coordinator life cycle
     override func start() {
-        let feeds = FeedsViewController(with: self, feedsController: feedsController)
+        let feed = FeedViewController(with: self, feedController: feedController)
 
-        router.push(feeds) {
+        router.push(feed) {
             self.executeCompletion()
         }
     }

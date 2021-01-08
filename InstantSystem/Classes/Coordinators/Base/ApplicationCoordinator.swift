@@ -13,15 +13,15 @@ class ApplicationCoordinator: BaseCoordinator {
     fileprivate let window: UIWindow
 
     // MARK: - Constructors
-    init(window: UIWindow, router: Router, feedsController: FeedsController) {
+    init(window: UIWindow, router: Router, feedController: FeedController) {
         self.window = window
         
-        super.init(feedsController: feedsController, router: router)
+        super.init(feedController: feedController, router: router)
     }
 
     // MARK: - Coordinator life cycle
     override func start() {
-        let coordinator = IntroductionCoordinator(with: feedsController, router: router)
+        let coordinator = IntroductionCoordinator(with: feedController, router: router)
         add(coordinator)
 
         coordinator.start()

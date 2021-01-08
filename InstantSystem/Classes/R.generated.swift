@@ -200,28 +200,28 @@ struct R: Rswift.Validatable {
 
   /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
-    /// Nib `FeedsCell`.
-    static let feedsCell = _R.nib._FeedsCell()
-    /// Nib `FeedsViewController`.
-    static let feedsViewController = _R.nib._FeedsViewController()
+    /// Nib `FeedCell`.
+    static let feedCell = _R.nib._FeedCell()
+    /// Nib `FeedViewController`.
+    static let feedViewController = _R.nib._FeedViewController()
     /// Nib `IntroductionViewController`.
     static let introductionViewController = _R.nib._IntroductionViewController()
     /// Nib `PostViewController`.
     static let postViewController = _R.nib._PostViewController()
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "FeedsCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.feedsCell) instead")
-    static func feedsCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.feedsCell)
+    /// `UINib(name: "FeedCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.feedCell) instead")
+    static func feedCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.feedCell)
     }
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UINib(name: "FeedsViewController", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.feedsViewController) instead")
-    static func feedsViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.feedsViewController)
+    /// `UINib(name: "FeedViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.feedViewController) instead")
+    static func feedViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.feedViewController)
     }
     #endif
 
@@ -241,12 +241,12 @@ struct R: Rswift.Validatable {
     }
     #endif
 
-    static func feedsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedsCell? {
-      return R.nib.feedsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedsCell
+    static func feedCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedCell? {
+      return R.nib.feedCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedCell
     }
 
-    static func feedsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.feedsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    static func feedViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.feedViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func introductionViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> IntroductionView? {
@@ -262,8 +262,8 @@ struct R: Rswift.Validatable {
 
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `FeedsCell`.
-    static let feedsCell: Rswift.ReuseIdentifier<FeedsCell> = Rswift.ReuseIdentifier(identifier: "FeedsCell")
+    /// Reuse identifier `FeedCell`.
+    static let feedCell: Rswift.ReuseIdentifier<FeedCell> = Rswift.ReuseIdentifier(identifier: "FeedCell")
 
     fileprivate init() {}
   }
@@ -316,23 +316,23 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
-    struct _FeedsCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = FeedsCell
+    struct _FeedCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = FeedCell
 
       let bundle = R.hostingBundle
-      let identifier = "FeedsCell"
-      let name = "FeedsCell"
+      let identifier = "FeedCell"
+      let name = "FeedCell"
 
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedsCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedsCell
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> FeedCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedCell
       }
 
       fileprivate init() {}
     }
 
-    struct _FeedsViewController: Rswift.NibResourceType {
+    struct _FeedViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
-      let name = "FeedsViewController"
+      let name = "FeedViewController"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView

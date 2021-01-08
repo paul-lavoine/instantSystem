@@ -1,5 +1,5 @@
 //
-//  FeedsViewController.swift
+//  FeedViewController.swift
 //  InstantSystem
 //
 //  Created by Paul_Lavoine on 05/01/2021.
@@ -8,21 +8,21 @@
 import UIKit
 import Rswift
 
-class FeedsViewController: UIViewController {
+class FeedViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet private (set) weak var tableView: UITableView!
     
     // MARK: - Properties
-    let feedsViewModel: FeedsViewModel
+    let feedViewModel: FeedViewModel
     let titleFeed: String?
     
     // MARK: - Constructors
-    required init(with coordinator: FeedsCoordinator, feedsController: FeedsController) {
-        self.feedsViewModel = FeedsViewModel(with: coordinator, feedsController: feedsController)
-        titleFeed           = feedsController.feed?.title
+    required init(with coordinator: FeedCoordinator, feedController: FeedController) {
+        self.feedViewModel = FeedViewModel(with: coordinator, feedController: feedController)
+        titleFeed          = feedController.feed?.title
         
-        super.init(nibName: R.nib.feedsViewController.name, bundle: R.nib.feedsViewController.bundle)
+        super.init(nibName: R.nib.feedViewController.name, bundle: R.nib.feedViewController.bundle)
     }
     
     required init?(coder: NSCoder) {
@@ -33,24 +33,24 @@ class FeedsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(R.nib.feedsCell)
+        tableView.register(R.nib.feedCell)
         
         title = titleFeed
     }
 }
 
-extension FeedsViewController: UITableViewDataSource {
+extension FeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return feedsViewModel.numberOfPost()
+        return feedViewModel.numberOfPost()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedsCell, for: indexPath) else {
-            fatalError("Cannot dequeue cell with <\(R.reuseIdentifier.feedsCell)> identifier")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.feedCell, for: indexPath) else {
+            fatalError("Cannot dequeue cell with <\(R.reuseIdentifier.feedCell)> identifier")
         }
         
-        if let post: Post = feedsViewModel.post(at: indexPath.row) {
+        if let post: Post = feedViewModel.post(at: indexPath.row) {
             cell.configure(with: post)
         }
         
@@ -58,11 +58,11 @@ extension FeedsViewController: UITableViewDataSource {
     }
 }
 
-extension FeedsViewController: UITableViewDelegate {
+extension FeedViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        feedsViewModel.didSelectItem(at: indexPath.row)
+        feedViewModel.didSelectItem(at: indexPath.row)
     }
 }

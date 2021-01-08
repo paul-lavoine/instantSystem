@@ -12,11 +12,11 @@ class IntroductionViewModel {
     var bindIntroductionViewModelToController : (() -> ()) = {}
     
     // MARK: - Constructor
-    init(with coordinator: IntroductionCoordinator, feedsController: FeedsController) {
+    init(with coordinator: IntroductionCoordinator, feedController: FeedController) {
         self.coordinator = coordinator
         
         // Fetch data
-        feedsController.fetchFeed { [weak self] (_) in
+        feedController.fetchFeed { [weak self] (_) in
             self?.bindIntroductionViewModelToController()
         } failure: {
             

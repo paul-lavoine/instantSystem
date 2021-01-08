@@ -8,13 +8,13 @@
 class IntroductionCoordinator: BaseCoordinator {
 
     // MARK: - Constructors
-    init(with feedsController: FeedsController, router: Router) {
-        super.init(feedsController: feedsController, router: router)
+    init(with feedController: FeedController, router: Router) {
+        super.init(feedController: feedController, router: router)
     }
 
     // MARK: - Coordinator life cycle
     override func start() {
-        let intro = IntroductionViewController(with: self, feedsController: feedsController)
+        let intro = IntroductionViewController(with: self, feedController: feedController)
 
         router.push(intro) {
             self.executeCompletion()
@@ -23,7 +23,7 @@ class IntroductionCoordinator: BaseCoordinator {
 
     // MARK: - Navigation
     func showFeed() {
-        let coordinator = FeedsCoordinator(with: feedsController, router: router)
+        let coordinator = FeedCoordinator(with: feedController, router: router)
         coordinator.onComplete = buildAutoRemoveBlock(for: coordinator)
 
         add(coordinator)

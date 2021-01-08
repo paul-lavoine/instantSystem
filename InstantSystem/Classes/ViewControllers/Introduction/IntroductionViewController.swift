@@ -10,13 +10,13 @@ import UIKit
 class IntroductionViewController: UIViewController {
     
     // MARK: - Properties
-    private var feedsController: FeedsController
+    private var feedController: FeedController
     private var introductionViewModel: IntroductionViewModel
     
     // MARK: - Constructors
-    required init(with coordinator: IntroductionCoordinator, feedsController: FeedsController) {
-        self.feedsController       = feedsController
-        self.introductionViewModel = IntroductionViewModel(with: coordinator, feedsController: feedsController)
+    required init(with coordinator: IntroductionCoordinator, feedController: FeedController) {
+        self.feedController       = feedController
+        self.introductionViewModel = IntroductionViewModel(with: coordinator, feedController: feedController)
         
         super.init(nibName: R.nib.introductionViewController.name, bundle: R.nib.introductionViewController.bundle)
     }

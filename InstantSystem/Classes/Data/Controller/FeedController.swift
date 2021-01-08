@@ -8,7 +8,7 @@
 import Moya
 import XMLParsing
 
-class FeedsController {
+class FeedController {
     
     // MARK: - Data
     var feed: Feed?
@@ -27,7 +27,7 @@ class FeedsController {
                         completion(fetchedFeed)
                         
                     } catch let error {
-                        print("ERROR: FeedsController -> Parsing failed : \(error)")
+                        print("ERROR: FeedController -> Parsing failed : \(error)")
                     }
                     
                 } else {
@@ -35,7 +35,7 @@ class FeedsController {
                 }
                 break
             case let .failure(error):
-                print("ERROR: FeedsController -> Can't fetch datas!! \(error)")
+                print("ERROR: FeedController -> Can't fetch datas!! \(error)")
                 failure()
                 break
             }

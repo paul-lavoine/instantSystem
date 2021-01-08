@@ -1,5 +1,5 @@
 //
-//  FeedsCell.swift
+//  FeedCell.swift
 //  InstantSystem
 //
 //  Created by Paul_Lavoine on 06/01/2021.
@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class FeedsCell: UITableViewCell {
+class FeedCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet private (set) weak var titleLabel: UILabel!
