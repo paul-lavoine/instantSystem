@@ -6,7 +6,6 @@
 //
 
 struct Image: Codable {
-    let type: String
     let height: Int
     let width: Int
     let url: String
